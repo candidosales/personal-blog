@@ -1,6 +1,6 @@
 import Head from 'next/head'
 
-import { Grid } from "@chakra-ui/react"
+import { Grid, SimpleGrid } from "@chakra-ui/react"
 import Portfolio from '../component/portfolio'
 import Image from 'next/image'
 
@@ -9,49 +9,43 @@ import Image from 'next/image'
 
 export default function Home() {
   const portfolio = [{
+    id: 1,
     imageUrl: "https://bit.ly/2Z4KKcF",
     imageAlt: "Rear view of modern home with pool",
-    beds: 3,
-    baths: 2,
     title: "Modern home in city center in the heart of historic Los Angeles",
     icons: ["angular"]
   }, {
+    id: 2,
     imageUrl: "https://bit.ly/2Z4KKcF",
     imageAlt: "Rear view of modern home with pool",
-    beds: 3,
-    baths: 2,
     title: "Modern home in city center in the heart of historic Los Angeles",
     icons: ["angular", "nextjs"]
 
   }, {
+    id: 3,
     imageUrl: "https://bit.ly/2Z4KKcF",
     imageAlt: "Rear view of modern home with pool",
-    beds: 3,
-    baths: 2,
     title: "Modern home in city center in the heart of historic Los Angeles",
     icons: ["angular", "nextjs"]
 
   }, {
+    id: 4,
     imageUrl: "https://bit.ly/2Z4KKcF",
     imageAlt: "Rear view of modern home with pool",
-    beds: 3,
-    baths: 2,
     title: "Modern home in city center in the heart of historic Los Angeles",
     icons: ["angular", "nextjs"]
 
   }, {
+    id: 5,
     imageUrl: "https://bit.ly/2Z4KKcF",
     imageAlt: "Rear view of modern home with pool",
-    beds: 3,
-    baths: 2,
     title: "Modern home in city center in the heart of historic Los Angeles",
     icons: ["angular", "nextjs"]
 
   }, {
+    id: 6,
     imageUrl: "https://bit.ly/2Z4KKcF",
     imageAlt: "Rear view of modern home with pool",
-    beds: 3,
-    baths: 2,
     title: "Modern home in city center in the heart of historic Los Angeles",
     icons: ["angular", "nextjs"]
 
@@ -76,20 +70,19 @@ export default function Home() {
         </section>
         <section className="grid">
           <h3>Portfolio</h3>
-          <Grid templateColumns="repeat(3, 1fr)" gap={6}>
+          <SimpleGrid  columns={{ sm: 1, md: 2, lg: 3 }} gap={6}>
             {
-              portfolio.map(p => (
+              portfolio.map((p, index) => (
                 <Portfolio
+                  key={index}
                   imageUrl={p.imageUrl}
                   imageAlt={p.imageAlt}
-                  beds={p.beds}
-                  baths={p.baths}
                   title={p.title}
                   icons={p.icons}
                 />
               ))
             }
-          </Grid>
+          </SimpleGrid>
         </section>
         <section className="grid">
           <h3>Extras</h3>
