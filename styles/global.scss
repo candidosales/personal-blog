@@ -24,12 +24,27 @@ a {
   background-repeat: no-repeat;
   position: relative;
   min-height: 400px;
+  @media screen and (min-width: 30em) {
+    background-position-y: -50px;
+  }
+  @media screen and (min-width: 62em) {
+    background-position-y: -100px;
+  }
 }
 
 .overlay {
   background: linear-gradient(0deg, rgba(255, 255, 255, 1) 85%, rgba(255, 255, 255, 0) 95%);
   height: 100%;
   display: flex;
+  @media screen and (min-width: 30em) {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 98%, rgba(255, 255, 255, 0) 100%);
+  }
+  @media screen and (min-width: 62em) {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 90%, rgba(255, 255, 255, 0) 98%);
+  }
+  @media screen and (min-width: 80em) {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 85%, rgba(255, 255, 255, 0) 95%);
+  }
 }
 
 .container {
@@ -41,6 +56,15 @@ a {
   align-items: center;
   max-width: 1000px;
   margin: 0 auto;
+  @media screen and (min-width: 30em) {
+    padding: 0 1.5rem;
+  }
+  @media screen and (min-width: 48em) {
+    padding: 0 0.5rem;
+  }
+  @media screen and (min-width: 62em) {
+    padding: 0 0.5rem;
+  }
 }
 
 main {
@@ -91,6 +115,12 @@ footer a {
 
 .about {
   padding: 5rem 0;
+  @media screen and (min-width: 30em) {
+    padding: 3rem 0;
+  }
+  @media screen and (min-width: 62em) {
+    padding: 5rem 0;
+  }
 
   div {
     line-height: 26px;
@@ -103,6 +133,15 @@ footer a {
     font-size: 4rem;
     color: var(--chakra-colors-gray-700);
     font-weight: bold;
+    @media screen and (min-width: 30em) {
+      font-size: 3rem;
+    }
+    @media screen and (min-width: 48em) {
+      font-size: 3rem;
+    }
+    @media screen and (min-width: 62em) {
+      font-size: 4rem;
+    }
   }
 
   h2 {
@@ -137,6 +176,12 @@ footer a {
     line-height: 2.5rem;
     font-weight: bold;
     margin-right: 1rem;
+    @media screen and (min-width: 30em) {
+      font-size: 1.5rem;
+    }
+    @media screen and (min-width: 62em) {
+      font-size: 2.5rem;
+    }
   }
 }
 
