@@ -2,7 +2,7 @@ import Head from 'next/head';
 import Portfolio from '../components/portfolio';
 import Topbar from '../components/topbar';
 import { ExternalLinkIcon } from '@chakra-ui/icons';
-import { extras, portfolio, volunteer } from './data';
+import { extras, portfolio, volunteer } from '../data/portfolios';
 import { Link, SimpleGrid } from '@chakra-ui/react';
 
 
