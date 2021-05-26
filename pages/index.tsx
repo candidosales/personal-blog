@@ -19,12 +19,21 @@ export default function Home() {
               name="viewport"
               content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=5"
             />
-            <meta name="description" content="Portfolio, side projects, the blog of the Candido Sales Gomes" />
+            <meta
+              name="description"
+              content="Portfolio, side projects, the blog of the Candido Sales Gomes"
+            />
             <meta property="og:locale" content="en" />
             <meta property="og:type" content="website" />
             <meta property="og:title" content="Candido Sales Gomes Portfolio" />
-            <meta property="og:site_name" content="Candido Sales Gomes Portfolio" />
-            <meta property="og:description" content="Portfolio, side projects, the blog of the Candido Sales Gomes" />
+            <meta
+              property="og:site_name"
+              content="Candido Sales Gomes Portfolio"
+            />
+            <meta
+              property="og:description"
+              content="Portfolio, side projects, the blog of the Candido Sales Gomes"
+            />
             <meta property="og:url" content="https://candidosales.me/" />
             <meta
               property="og:image"
@@ -100,7 +109,10 @@ export default function Home() {
             <section className="grid">
               <div className="grid-header">
                 <h3>Extras</h3>
-                <p>Other projects that I develop in my spare time to practice new resources and technologies</p>
+                <p>
+                  Other projects that I develop in my spare time to practice new
+                  resources and technologies
+                </p>
               </div>
               <SimpleGrid
                 className="portfolios"
@@ -123,7 +135,11 @@ export default function Home() {
             <section className="grid">
               <div className="grid-header">
                 <h3>Volunteer</h3>
-                <p>Some projects that I develop and help to maintain voluntarily that it is in accordance with principles that I believe such as education, culture, art, public health and sustainability</p>
+                <p>
+                  Some projects that I develop and help to maintain voluntarily
+                  that it is in accordance with principles that I believe such
+                  as education, culture, art, public health and sustainability
+                </p>
               </div>
               <SimpleGrid
                 className="portfolios"
@@ -146,13 +162,7 @@ export default function Home() {
             <section className="grid">
               <div className="grid-header">
                 <h3>Blog</h3>
-                <Tooltip
-                  placement="right"
-                  label="Some posts ..."
-                  aria-label="A tooltip"
-                >
-                  <InfoIcon color="blue.600" />
-                </Tooltip>
+                <p>Some posts ...</p>
               </div>
               <SimpleGrid
                 className="portfolios"
@@ -175,25 +185,25 @@ export default function Home() {
           </main>
 
           <footer>
-          <p>
-            made by
-            <Link color="blue.500" href="https://nextjs.org/" isExternal>
-              nextjs
-            </Link>
-            and
-            <Link color="blue.500" href="https://vercel.com/" isExternal>
-              vercel
-            </Link>
-          </p>
-          <p>
-            <Link
-              color="blue.500"
-              href="https://twitter.com/candidosales"
-              isExternal
-            >
-              @candidosales
-            </Link>
-          </p>
+            <p>
+              made by
+              <Link color="blue.500" href="https://nextjs.org/" isExternal>
+                nextjs
+              </Link>
+              and
+              <Link color="blue.500" href="https://vercel.com/" isExternal>
+                vercel
+              </Link>
+            </p>
+            <p>
+              <Link
+                color="blue.500"
+                href="https://twitter.com/candidosales"
+                isExternal
+              >
+                @candidosales
+              </Link>
+            </p>
           </footer>
         </div>
       </div>
