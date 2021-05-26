@@ -11,8 +11,34 @@ export default function Home() {
       <div className="overlay">
         <div className="container">
           <Head>
-            <title>Candido Sales</title>
-            <link rel="icon" href="/favicon.ico" />
+            <title>Candido Sales Gomes Portfolio</title>
+            <link rel="canonical" href="https://personal-blog-candidosales.vercel.app/" />
+            <link rel="shortcut icon" href="/favicon.jpg" type="image/png" />
+            <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+            <meta
+              name="viewport"
+              content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=5"
+            />
+            <meta name="description" content="Portfolio, side projects, the blog of the Candido Sales Gomes" />
+            <meta property="og:locale" content="en" />
+            <meta property="og:type" content="website" />
+            <meta property="og:title" content="Candido Sales Gomes Portfolio" />
+            <meta property="og:site_name" content="Candido Sales Gomes Portfolio" />
+            <meta property="og:description" content="Portfolio, side projects, the blog of the Candido Sales Gomes" />
+            <meta property="og:url" content="https://personal-blog-candidosales.vercel.app/" />
+            <meta
+              property="og:image"
+              content="https://personal-blog-candidosales.vercel.app/card-social-media-1200.png"
+            />
+            <meta property="og:image:width" content="1200" />
+            <meta property="og:image:height" content="730" />
+            <meta name="twitter:creator" content="@candidosales" />
+            <meta name="twitter:site" content="@candidosales" />
+            <meta name="twitter:card" content="summary_large_image" />
+            <meta name="theme-color" content="#ffffff" />
+            <link rel="shortcut icon" href="/pwa/icon-512.png" />
+            <link rel="apple-touch-icon" href="/pwa/icon-512.png" />
+            <link rel="manifest" href="/manifest.json" />
           </Head>
 
           <main>
@@ -73,7 +99,6 @@ export default function Home() {
                     description={p.description}
                     url={p.url}
                     icons={p.icons}
-                    isPwa={p.isPwa}
                   />
                 ))}
               </SimpleGrid>

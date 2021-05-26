@@ -7,8 +7,7 @@ export default function Portfolio({
   title,
   description,
   url,
-  icons,
-  isPwa
+  icons
 }) {
   return (
     <LinkBox as="article" borderWidth="1px" rounded="md">
