@@ -34,7 +34,7 @@ export default function Portfolio({
               {description}
             </Box>
             <Box className="icons">
-              {icons.map((icon, index) => (
+              {icons.length > 0 && icons.map((icon, index) => (
                 <img
                   key={index}
                   src={`/devicon/${icon}.svg`}

@@ -1,16 +1,16 @@
 import Head from 'next/head';
 import Portfolio from '../components/portfolio';
 import Topbar from '../components/topbar';
-import { ExternalLinkIcon, InfoIcon } from '@chakra-ui/icons';
+import { ExternalLinkIcon } from '@chakra-ui/icons';
 import { extras, portfolio, volunteer, posts } from '../data/portfolios';
-import { Link, SimpleGrid, Tooltip } from '@chakra-ui/react';
+import { Link, SimpleGrid } from '@chakra-ui/react';
 
 export default function Home() {
   return (
     <div className="cover">
       <div className="overlay">
         <div className="container">
-          <Head>
+        <Head>
             <title>Candido Sales Gomes Portfolio</title>
             <link rel="canonical" href="https://candidosales.me/" />
             <link rel="shortcut icon" href="/favicon.jpg" type="image/png" />
@@ -49,7 +49,6 @@ export default function Home() {
             <link rel="apple-touch-icon" href="/pwa/icon-512.png" />
             <link rel="manifest" href="/manifest.json" />
           </Head>
-
           <main>
             <section className="about">
               <Topbar></Topbar>
@@ -162,10 +161,14 @@ export default function Home() {
             <section className="grid">
               <div className="grid-header">
                 <h3>Blog</h3>
-                <p>Some posts ...</p>
+                <p>
+                  Some projects that I develop and help to maintain voluntarily
+                  that it is in accordance with principles that I believe such
+                  as education, culture, art, public health and sustainability
+                </p>
               </div>
               <SimpleGrid
-                className="portfolios"
+                className="portfolios blog"
                 columns={{ sm: 1, md: 2, lg: 3 }}
                 gap={6}
               >

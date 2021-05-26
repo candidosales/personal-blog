@@ -104,7 +104,7 @@ export const volunteer = [
 
 export const posts = [
   {
-    imageUrl: 'https://miro.medium.com/max/552/1*70Y9YvuaKfaYf3xcfFy5gg.jpeg',
+    imageUrl: '/post-1.png',
     imageAlt: 'How I got a job offer in Canada',
     title: 'How I got a job offer in Canada',
     description: 'In this article, I’ll present the process I did to get the job offer through VanHack',
@@ -112,7 +112,7 @@ export const posts = [
     icons: []
   },
   {
-    imageUrl: 'https://miro.medium.com/max/2048/0*NzlSJs4ZFA6V0L0X',
+    imageUrl: '/post-2.png',
     imageAlt: 'Como consegui uma oferta de emprego no Canadá',
     title: 'Como consegui uma oferta de emprego no Canadá',
     description:
@@ -121,7 +121,7 @@ export const posts = [
     icons: []
   },
   {
-    imageUrl: 'https://miro.medium.com/max/2048/1*oRyUrGhSb4mPZ3KxSONkGg.jpeg',
+    imageUrl: '/post-3.png',
     imageAlt: 'Como fiz o intercâmbio para o Canadá',
     title: 'Como fiz o intercâmbio para o Canadá',
     description:

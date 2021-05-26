@@ -254,6 +254,19 @@ footer a {
     &:hover {
       box-shadow: var(--chakra-shadows-2xl);
       transform: scale(1.1);
+      @media screen and (min-width: 22.5em) {
+        transform: scale(1);
+        box-shadow: none;
+      }
+      @media screen and (min-width: 30em) {
+        transform: scale(1);
+        box-shadow: none;
+      }
+      @media screen and (min-width: 48em) {
+        transform: scale(1.1);
+        box-shadow: var(--chakra-shadows-2xl);
+
+      }
       .portfolio-link {
         opacity: 100%;
       }
