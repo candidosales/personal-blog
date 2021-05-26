@@ -1,10 +1,9 @@
 import Head from 'next/head';
-import Image from 'next/image';
-import Portfolio from '../component/portfolio';
+import Portfolio from '../components/portfolio';
+import Topbar from '../components/topbar';
 import { ExternalLinkIcon } from '@chakra-ui/icons';
+import { extras, portfolio, volunteer } from './data';
 import { Link, SimpleGrid } from '@chakra-ui/react';
-import { portfolio, extras, volunteer } from './data';
-import Topbar from '../component/topbar';
 
 
 export default function Home() {
