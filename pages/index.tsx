@@ -4,11 +4,8 @@ import Topbar from '../components/topbar';
 import { ExternalLinkIcon, InfoIcon } from '@chakra-ui/icons';
 import { extras, portfolio, volunteer, posts } from '../data/portfolios';
 import { Link, SimpleGrid, Tooltip } from '@chakra-ui/react';
-import { useRouter } from 'next/router';
 
 export default function Home() {
-  const router = useRouter();
-
   return (
     <div className="cover">
       <div className="overlay">
@@ -80,13 +77,7 @@ export default function Home() {
             <section className="grid">
               <div className="grid-header">
                 <h3>Portfolio</h3>
-                <Tooltip
-                  placement="right"
-                  label="Some open source projects that I maintain"
-                  aria-label="A tooltip"
-                >
-                  <InfoIcon color="blue.600" />
-                </Tooltip>
+                <p>Some open source projects that I maintain</p>
               </div>
               <SimpleGrid
                 className="portfolios"
@@ -109,13 +100,7 @@ export default function Home() {
             <section className="grid">
               <div className="grid-header">
                 <h3>Extras</h3>
-                <Tooltip
-                  placement="right"
-                  label="Other projects that I develop in my spare time to practice new resources and technologies"
-                  aria-label="A tooltip"
-                >
-                  <InfoIcon color="blue.600" />
-                </Tooltip>
+                <p>Other projects that I develop in my spare time to practice new resources and technologies</p>
               </div>
               <SimpleGrid
                 className="portfolios"
@@ -138,13 +123,7 @@ export default function Home() {
             <section className="grid">
               <div className="grid-header">
                 <h3>Volunteer</h3>
-                <Tooltip
-                  placement="right"
-                  label="Some projects that I develop and help to maintain voluntarily that it is in accordance with principles that I believe such as education, culture, art, public health and sustainability"
-                  aria-label="A tooltip"
-                >
-                  <InfoIcon color="blue.600" />
-                </Tooltip>
+                <p>Some projects that I develop and help to maintain voluntarily that it is in accordance with principles that I believe such as education, culture, art, public health and sustainability</p>
               </div>
               <SimpleGrid
                 className="portfolios"

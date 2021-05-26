@@ -190,7 +190,7 @@ footer a {
   .presentation {
     color: var(--chakra-colors-gray-600);
     margin-bottom: 1rem;
-    ;
+    font-size: 1.2rem;
   }
 }
 
@@ -217,10 +217,11 @@ footer a {
 
 .grid-header {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   margin-bottom: 2rem;
-  align-items: center;
-
+  p {
+    font-size: 0.8rem;
+  }
 }
 
 .portfolios {
@@ -232,7 +233,7 @@ footer a {
     transform: scale(1);
     background: #fff;
     @media screen and (min-width: 22.5em) {
-      width: 340px;
+      width: 87%;
     }
     @media screen and (min-width: 30em) {
       width: 100%;
@@ -294,6 +295,7 @@ footer a {
 .modal-contact {
   display: flex;
   margin: 1rem 0;
+  justify-content: flex-end;
   button {
     margin-right: 1rem;
   }
