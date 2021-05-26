@@ -4,15 +4,18 @@ import Topbar from '../components/topbar';
 import { ExternalLinkIcon, InfoIcon } from '@chakra-ui/icons';
 import { extras, portfolio, volunteer, posts } from '../data/portfolios';
 import { Link, SimpleGrid, Tooltip } from '@chakra-ui/react';
+import { useRouter } from 'next/router';
 
 export default function Home() {
+  const router = useRouter();
+
   return (
     <div className="cover">
       <div className="overlay">
         <div className="container">
           <Head>
             <title>Candido Sales Gomes Portfolio</title>
-            <link rel="canonical" href="https://personal-blog-candidosales.vercel.app/" />
+            <link rel="canonical" href="https://candidosales.me/" />
             <link rel="shortcut icon" href="/favicon.jpg" type="image/png" />
             <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
             <meta
@@ -25,10 +28,10 @@ export default function Home() {
             <meta property="og:title" content="Candido Sales Gomes Portfolio" />
             <meta property="og:site_name" content="Candido Sales Gomes Portfolio" />
             <meta property="og:description" content="Portfolio, side projects, the blog of the Candido Sales Gomes" />
-            <meta property="og:url" content="https://personal-blog-candidosales.vercel.app/" />
+            <meta property="og:url" content="https://candidosales.me/" />
             <meta
               property="og:image"
-              content="https://personal-blog-candidosales.vercel.app/card-social-media-1200.png"
+              content="https://candidosales.me/card-social-media-1200.png"
             />
             <meta property="og:image:width" content="1200" />
             <meta property="og:image:height" content="730" />
@@ -192,7 +195,27 @@ export default function Home() {
             </section>
           </main>
 
-          <footer></footer>
+          <footer>
+          <p>
+            made by
+            <Link color="blue.500" href="https://nextjs.org/" isExternal>
+              nextjs
+            </Link>
+            and
+            <Link color="blue.500" href="https://vercel.com/" isExternal>
+              vercel
+            </Link>
+          </p>
+          <p>
+            <Link
+              color="blue.500"
+              href="https://twitter.com/candidosales"
+              isExternal
+            >
+              @candidosales
+            </Link>
+          </p>
+          </footer>
         </div>
       </div>
     </div>

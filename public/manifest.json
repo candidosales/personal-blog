@@ -26,7 +26,7 @@
   "display": "standalone",
   "orientation": "portrait",
   "start_url": "/",
-  "scope": "https://personal-blog-candidosales.vercel.app/",
+  "scope": "https://candidosales.me/",
   "theme_color": "#ffffff",
   "prefer_related_applications": true
 }

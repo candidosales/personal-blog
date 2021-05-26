@@ -27,9 +27,7 @@ export default function Topbar() {
 
   return (
     <header className="header">
-      <div className="avatar">
-        <Image src="/me.png" width={100} height={100} alt="Profile image" title="Profile image"/>
-      </div>
+      <Image className="avatar" src="/me.png" width={100} height={100} alt="Profile image" title="Profile image"/>
       <div className="header-actions">
         <Button colorScheme="blue" size="md" onClick={onOpen}>
           get in touch
