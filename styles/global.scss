@@ -43,7 +43,7 @@ a {
     background: linear-gradient(0deg, rgba(255, 255, 255, 1) 90%, rgba(255, 255, 255, 0) 98%);
   }
   @media screen and (min-width: 80em) {
-    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 85%, rgba(255, 255, 255, 0) 95%);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 88%, rgba(255, 255, 255, 0) 95%);
   }
 }
 
@@ -75,7 +75,7 @@ main {
   align-items: center;
 }
 
-header {
+.header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -154,9 +154,9 @@ footer a {
     height: 100px;
     background: var(--chakra-colors-gray-500);
     border-radius: 50px;
-
     img {
       border-radius: 50px;
+      box-shadow: var(--chakra-shadows-xl);
     }
   }
 
@@ -235,7 +235,7 @@ footer a {
   }
 }
 
-.header__actions {
+.header-actions {
   width: 300px;
   display: flex;
   justify-content: space-between;
@@ -244,4 +244,23 @@ footer a {
     width: 35px;
     height: 35px;
   }
+}
+
+.modal-contact {
+  display: flex;
+  margin: 1rem 0;
+  button {
+    margin-right: 1rem;
+  }
+  svg {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+.pwa {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  opacity: 0.5;
 }

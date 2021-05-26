@@ -7,7 +7,8 @@ export default function Portfolio({
   title,
   description,
   url,
-  icons
+  icons,
+  isPwa
 }) {
   return (
     <LinkBox as="article" borderWidth="1px" rounded="md">
@@ -40,6 +41,7 @@ export default function Portfolio({
                   src={`/devicon/${icon}.svg`}
                   width="30"
                   height="30"
+                  title={`${icon} icon`}
                 />
               ))}
               <ExternalLinkIcon className="portfolio-link" mx="2px" />
