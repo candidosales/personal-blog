@@ -45,7 +45,7 @@ export default function Home() {
             </section>
             <section className="grid">
               <div className="grid-header">
-                <h3>Portfolio</h3>
+                <h3>🧳 Portfolio</h3>
                 <p>Some open source projects that I maintain</p>
               </div>
               <SimpleGrid
@@ -68,7 +68,7 @@ export default function Home() {
             </section>
             <section className="grid">
               <div className="grid-header">
-                <h3>Extras</h3>
+                <h3>✨ Extras</h3>
                 <p>
                   Other projects that I develop in my spare time to practice new
                   resources and technologies
@@ -94,7 +94,7 @@ export default function Home() {
             </section>
             <section className="grid">
               <div className="grid-header">
-                <h3>Volunteer</h3>
+                <h3>🤝 Volunteer</h3>
                 <p>
                   Some projects that I develop and help to maintain voluntarily
                   that it is in accordance with principles that I believe such
@@ -121,7 +121,7 @@ export default function Home() {
             </section>
             <section className="grid">
               <div className="grid-header">
-                <h3>Blog</h3>
+                <h3>📰 Blog</h3>
                 <p>
                   Some projects that I develop and help to maintain voluntarily
                   that it is in accordance with principles that I believe such
