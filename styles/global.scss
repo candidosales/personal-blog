@@ -413,6 +413,9 @@ footer a {
   .presentation {
     color: var(--chakra-colors-gray-300);
   }
+  .about h2, .grid h3 {
+    color: var(--chakra-colors-gray-400);
+  }
   .grid-header p {
     color: var(--chakra-colors-gray-100);
   }
