@@ -1,15 +1,20 @@
-import Head from 'next/head';
-import Portfolio from '../components/portfolio';
-import Topbar from '../components/topbar';
-import { ExternalLinkIcon } from '@chakra-ui/icons';
-import { extras, portfolio, volunteer, posts } from '../data/portfolios';
-import { Link, SimpleGrid } from '@chakra-ui/react';
+import Portfolio from "../components/portfolio";
+import Topbar from "../components/topbar";
+import {ExternalLinkIcon} from "@chakra-ui/icons";
+import {extras, portfolio, volunteer, posts} from "../data/portfolios";
+import {Flex, Link, SimpleGrid} from "@chakra-ui/react";
 
 export default function Home() {
   return (
     <div className="cover">
       <div className="overlay">
-        <div className="container">
+        <Flex
+          className="container-flex"
+          direction="column"
+          align="center"
+          maxW={{xl: "1200px"}}
+          m="0 auto"
+        >
           <main>
             <section className="about">
               <Topbar></Topbar>
@@ -20,24 +25,18 @@ export default function Home() {
                 the web and mobile.
               </h2>
               <p className="about-description">
-                I'm Brazilian 🇧🇷 and a{' '}
-                <Link
-                  href="https://en.wikipedia.org/wiki/Saskatoon"
-                  isExternal
-                >
+                I'm Brazilian 🇧🇷 and a{" "}
+                <Link href="https://en.wikipedia.org/wiki/Saskatoon" isExternal>
                   Saskatoon-based 🇨🇦
                   <ExternalLinkIcon mx="2px" />
-                </Link>{' '}
+                </Link>{" "}
                 software engineer who specializes in building (and occasionally
                 designing) exceptional digital experiences. Currently, I'm a
-                software engineer at{' '}
-                <Link
-                  href="https://www.vendasta.com/"
-                  isExternal
-                >
+                software engineer at{" "}
+                <Link href="https://www.vendasta.com/" isExternal>
                   Vendasta
                   <ExternalLinkIcon mx="2px" />
-                </Link>{' '}
+                </Link>{" "}
                 focused on building accessible, human-centered products.
               </p>
             </section>
@@ -48,7 +47,7 @@ export default function Home() {
               </div>
               <SimpleGrid
                 className="portfolios"
-                columns={{ sm: 1, md: 2, lg: 3 }}
+                columns={{sm: 1, md: 2, lg: 3}}
                 gap={6}
               >
                 {portfolio.map((p, index) => (
@@ -74,7 +73,7 @@ export default function Home() {
               </div>
               <SimpleGrid
                 className="portfolios"
-                columns={{ sm: 1, md: 2, lg: 3 }}
+                columns={{sm: 1, md: 2, lg: 3}}
                 gap={6}
               >
                 {extras.map((p, index) => (
@@ -101,7 +100,7 @@ export default function Home() {
               </div>
               <SimpleGrid
                 className="portfolios"
-                columns={{ sm: 1, md: 2, lg: 3 }}
+                columns={{sm: 1, md: 2, lg: 3}}
                 gap={6}
               >
                 {volunteer.map((e, index) => (
@@ -124,7 +123,7 @@ export default function Home() {
               </div>
               <SimpleGrid
                 className="portfolios blog"
-                columns={{ sm: 1, md: 2, lg: 3 }}
+                columns={{sm: 1, md: 2, lg: 3}}
                 gap={6}
               >
                 {posts.map((e, index) => (
@@ -163,7 +162,7 @@ export default function Home() {
               </Link>
             </p>
           </footer>
-        </div>
+        </Flex>
       </div>
     </div>
   );

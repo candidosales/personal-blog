@@ -1,4 +1,4 @@
-import { Box, Image, LinkBox, LinkOverlay } from '@chakra-ui/react';
+import { Box, Image, LinkBox, LinkOverlay, Flex } from '@chakra-ui/react';
 import { ExternalLinkIcon } from '@chakra-ui/icons';
 
 export default function Portfolio({
@@ -12,27 +12,11 @@ export default function Portfolio({
   return (
     <LinkBox as="article">
       <LinkOverlay href={url} isExternal>
-        <Box overflow="hidden" className="portfolio">
+        <Flex className="portfolio" direction="column">
           <Image src={imageUrl} alt={imageAlt} loading="lazy" />
-          <Box p="6">
-            <Box
-              mt="1"
-              fontWeight="semibold"
-              as="h4"
-              lineHeight="tight"
-              isTruncated
-            >
-              {title}
-            </Box>
-            <Box
-              mt="1"
-              mb="4"
-              fontWeight="normal"
-              fontSize="0.8rem"
-              lineHeight="tight"
-            >
-              {description}
-            </Box>
+          <div className="article-wrap">
+            <h4>{title}</h4>
+            <p>{description}</p>
             <Box className="icons">
               {icons.length > 0 &&
                 icons.map((icon, index) => (
@@ -47,8 +31,8 @@ export default function Portfolio({
                 ))}
               <ExternalLinkIcon className="portfolio-link" mx="2px" />
             </Box>
-          </Box>
-        </Box>
+          </div>
+        </Flex>
       </LinkOverlay>
     </LinkBox>
   );

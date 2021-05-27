@@ -73,29 +73,6 @@ a {
   }
 }
 
-.container {
-  min-height: 100vh;
-  padding: 0 0.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  max-width: 1000px;
-  margin: 0 auto;
-  @media screen and (min-width: 22.5em) {
-    padding: 0 1rem;
-    width: 97%;
-  }
-  @media screen and (min-width: 30em) {
-    padding: 0 1.5rem;
-  }
-  @media screen and (min-width: 48em) {
-    padding: 0 0.5rem;
-  }
-  @media screen and (min-width: 62em) {
-    padding: 0 0.5rem;
-  }
-}
-
 main {
   flex: 1;
   display: flex;
@@ -151,7 +128,7 @@ footer a {
 }
 
 .about {
-  padding: 5rem 0;
+  padding: 2rem 0;
   @media screen and (min-width: 22.5em) {
     padding: 2rem 0;
   }
@@ -170,7 +147,7 @@ footer a {
   h2 {
     margin: 0;
     line-height: 1.15;
-    font-size: 4rem;
+    font-size: 2rem;
     color: var(--chakra-colors-gray-700);
     font-weight: bold;
     @media screen and (min-width: 22.5em) {
@@ -234,11 +211,11 @@ footer a {
 
   h3 {
     color: var(--chakra-colors-gray-500);
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     line-height: 2.5rem;
     font-weight: bold;
     margin-right: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.2rem;
     @media screen and (min-width: 22.5em) {
       font-size: 1.5rem;
       margin-bottom: 0.2rem;
@@ -308,6 +285,20 @@ footer a {
       .portfolio-link {
         opacity: 100%;
       }
+    }
+    h4 {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin-top: var(--chakra-space-1);
+    }
+    p {
+      margin-top: var(--chakra-space-1);
+      margin-bottom: var(--chakra-space-4);
+      font-size: 0.8rem;
+      font-weight: normal;
+    }
+    .article-wrap {
+      padding: var(--chakra-space-6);
     }
   }
 
@@ -380,6 +371,11 @@ footer a {
     background-image: url('../public/background-dark.png');
   }
   .overlay {
+    background: linear-gradient(
+      0deg,
+      var(--chakra-colors-gray-800) 85%,
+      rgba(255, 255, 255, 0) 95%
+    );
     @media screen and (min-width: 22.5em) {
       background: linear-gradient(
         0deg,
@@ -430,4 +426,9 @@ footer a {
   .header-actions svg, .modal-contact svg {
     color: var(--chakra-colors-gray-300);
   }
+}
+
+
+.container-flex {
+  padding: 0 1rem;
 }
