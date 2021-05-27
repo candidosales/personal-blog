@@ -39,7 +39,6 @@ If you want to support Personal Portfolio, you can ☕ [**buy a coffee here**](h
 
 ## ✨ Acknowledgment
 
-
 ## Author
 
 - Cândido Sales - [@candidosales](https://twitter.com/candidosales)
