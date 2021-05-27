@@ -48,7 +48,7 @@ export const portfolio = [
     title: 'Personal Portfolio',
     description: 'Landing page for your personal portfolio',
     url: 'https://github.com/candidosales/personal-blog',
-    icons: ['nextjs', 'react', 'sass', 'vercel', 'pwa']
+    icons: ['nextjs', 'react', 'chakra-ui', 'sass', 'vercel', 'pwa']
   },
   {
     imageUrl: '/empresas-angular.png',
@@ -69,7 +69,7 @@ export const extras = [
     description:
       'I ❤️ this game and wanted to create a possibility to play with my friends online and get to know each other even from a distance. (COVID tough times 😞)',
     url: 'https://wnrs.app/',
-    icons: ['nextjs', 'react', 'sass', 'vercel', 'pwa']
+    icons: ['nextjs', 'react', 'chakra-ui', 'sass', 'vercel', 'pwa']
   },
   {
     imageUrl: '/my-agenda-cultural.gif',

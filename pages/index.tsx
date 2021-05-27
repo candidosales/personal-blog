@@ -20,7 +20,7 @@ export default function Home() {
                 the web and mobile.
               </h2>
               <p className="about-description">
-                I'm a{' '}
+                I'm Brazilian 🇧🇷 and a{' '}
                 <Link
                   href="https://en.wikipedia.org/wiki/Saskatoon"
                   isExternal
