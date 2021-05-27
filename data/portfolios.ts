@@ -48,7 +48,7 @@ export const portfolio = [
     title: 'Personal Blog',
     description: 'Landing page for your personal portfolio',
     url: 'https://github.com/candidosales/personal-blog',
-    icons: ['nextjs', 'react', 'sass', 'vercel', 'pwa'],
+    icons: ['nextjs', 'react', 'sass', 'vercel', 'pwa']
   },
   {
     imageUrl: '/empresas-angular.png',
@@ -69,7 +69,7 @@ export const extras = [
     description:
       'I ❤️ this game and wanted to create a possibility to play with my friends online and get to know each other even from a distance. (Fucking virus! 🤬)',
     url: 'https://wnrs.app/',
-    icons: ['nextjs', 'react', 'sass', 'vercel', 'pwa'],
+    icons: ['nextjs', 'react', 'sass', 'vercel', 'pwa']
   },
   {
     imageUrl: '/my-agenda-cultural.gif',
@@ -78,7 +78,7 @@ export const extras = [
     description:
       'PWA website that helps you organize your agenda at large events',
     url: 'https://carnaval-sp-ec736.web.app/',
-    icons: ['angular', 'firebase', 'ruby', 'rails', 'pwa'],
+    icons: ['angular', 'firebase', 'ruby', 'rails', 'pwa']
   }
 ];
 
@@ -89,7 +89,7 @@ export const volunteer = [
     title: 'Geleia Total',
     description: 'Promote the culture and art of the state of Piauí - 🇧🇷',
     url: 'https://www.geleiatotal.com.br/',
-    icons: ['wordpress', 'php', 'digitalocean', 'pwa'],
+    icons: ['wordpress', 'php', 'digitalocean', 'pwa']
   },
   {
     imageUrl: '/mapa-aborto-legal.gif',
@@ -107,7 +107,8 @@ export const posts = [
     imageUrl: '/post-1.png',
     imageAlt: 'How I got a job offer in Canada',
     title: 'How I got a job offer in Canada',
-    description: 'In this article, I’ll present the process I did to get the job offer through VanHack',
+    description:
+      'In this article, I’ll present the process I did to get the job offer through VanHack',
     url: 'https://blog.usejournal.com/how-did-i-get-a-job-offer-in-canada-3351937653ad',
     icons: []
   },

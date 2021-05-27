@@ -26,7 +26,14 @@ export default function Topbar() {
 
   return (
     <header className="header">
-      <Image className="avatar" src="/me.png" width={100} height={100} alt="Profile image" title="Profile image"/>
+      <Image
+        className="avatar"
+        src="/me.png"
+        width={100}
+        height={100}
+        alt="Profile image"
+        title="Profile image"
+      />
       <div className="header-actions">
         <Button colorScheme="blue" size="md" onClick={onOpen}>
           get in touch
@@ -73,7 +80,8 @@ export default function Topbar() {
           <ModalBody>
             <p>
               It will be a pleasure to talk to you about any new project,
-              consultancy or mentoring. <br /><br/>
+              consultancy or mentoring. <br />
+              <br />
               👋 Feel free to speak with me by one of the means below:
             </p>
             <Box className="modal-contact">

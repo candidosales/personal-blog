@@ -122,11 +122,7 @@ export default function Home() {
             <section className="grid">
               <div className="grid-header">
                 <h3>📰 Blog</h3>
-                <p>
-                  Some projects that I develop and help to maintain voluntarily
-                  that it is in accordance with principles that I believe such
-                  as education, culture, art, public health and sustainability
-                </p>
+                <p>Some posts ...</p>
               </div>
               <SimpleGrid
                 className="portfolios blog"

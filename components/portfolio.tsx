@@ -34,16 +34,17 @@ export default function Portfolio({
               {description}
             </Box>
             <Box className="icons">
-              {icons.length > 0 && icons.map((icon, index) => (
-                <img
-                  key={index}
-                  src={`/devicon/${icon}.svg`}
-                  width="30"
-                  height="30"
-                  title={`${icon} icon`}
-                  loading="lazy"
-                />
-              ))}
+              {icons.length > 0 &&
+                icons.map((icon, index) => (
+                  <img
+                    key={index}
+                    src={`/devicon/${icon}.svg`}
+                    width="30"
+                    height="30"
+                    title={`${icon} icon`}
+                    loading="lazy"
+                  />
+                ))}
               <ExternalLinkIcon className="portfolio-link" mx="2px" />
             </Box>
           </Box>
