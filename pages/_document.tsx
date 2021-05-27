@@ -17,7 +17,7 @@ class MyDocument extends Document {
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
           <meta
             name="description"
-            content="Portfolio, side projects, the blog of the Candido Sales Gomes"
+            content="Portfolio, side projects, the blog of the Candido Sales Gomes and among other things"
           />
           <meta property="og:locale" content="en" />
           <meta property="og:type" content="website" />
