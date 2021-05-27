@@ -26,7 +26,7 @@
   "display": "standalone",
   "orientation": "portrait",
   "start_url": "/",
-  "scope": "https://candidosales.me/",
+  "scope": "https://www.candidosales.me/",
   "theme_color": "#ffffff",
   "prefer_related_applications": true
 }

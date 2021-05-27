@@ -12,7 +12,7 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          <link rel="canonical" href="https://candidosales.me/" />
+          <link rel="canonical" href="https://www.candidosales.me/" />
           <link rel="shortcut icon" href="/favicon.jpg" type="image/png" />
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
           <meta
@@ -30,10 +30,10 @@ class MyDocument extends Document {
             property="og:description"
             content="Portfolio, side projects, the blog of the Candido Sales Gomes"
           />
-          <meta property="og:url" content="https://candidosales.me/" />
+          <meta property="og:url" content="https://www.candidosales.me/" />
           <meta
             property="og:image"
-            content="https://candidosales.me/card-social-media-1200.png"
+            content="https://www.candidosales.me/card-social-media-1200.png"
           />
           <meta property="og:image:width" content="1200" />
           <meta property="og:image:height" content="730" />
@@ -42,7 +42,7 @@ class MyDocument extends Document {
           <meta name="twitter:card" content="summary_large_image" />
           <meta
             name="twitter:image"
-            content="https://candidosales.me/card-social-media-1200.png"
+            content="https://www.candidosales.me/card-social-media-1200.png"
           />
           <meta name="theme-color" content="#ffffff" />
           <link rel="shortcut icon" href="/pwa/icon-512.png" />
