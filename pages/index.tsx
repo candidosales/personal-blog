@@ -29,7 +29,7 @@ export default function Home() {
                   <ExternalLinkIcon mx="2px" />
                 </Link>{' '}
                 software engineer who specializes in building (and occasionally
-                designing) exceptional digital experiences. Currently, I'm an
+                designing) exceptional digital experiences. Currently, I'm a
                 software engineer at{' '}
                 <Link
                   href="https://www.vendasta.com/"
