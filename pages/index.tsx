@@ -19,7 +19,7 @@ export default function Home() {
                 I build things for <br />
                 the web and mobile.
               </h2>
-              <p>
+              <p className="about-description">
                 I'm a{' '}
                 <Link
                   color="blue.600"

@@ -10,7 +10,7 @@ export default function Portfolio({
   icons
 }) {
   return (
-    <LinkBox as="article" borderWidth="1px" rounded="md">
+    <LinkBox as="article">
       <LinkOverlay href={url} isExternal>
         <Box overflow="hidden" className="portfolio">
           <Image src={imageUrl} alt={imageAlt} loading="lazy" />

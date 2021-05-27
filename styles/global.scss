@@ -37,7 +37,7 @@ a {
 .overlay {
   background: linear-gradient(
     0deg,
-    rgba(255, 255, 255, 1) 85%,
+    var(--chakra-colors-gray-50) 85%,
     rgba(255, 255, 255, 0) 95%
   );
   height: 100%;
@@ -45,28 +45,28 @@ a {
   @media screen and (min-width: 22.5em) {
     background: linear-gradient(
       0deg,
-      rgba(255, 255, 255, 1) 99%,
+      var(--chakra-colors-gray-50) 99%,
       rgba(255, 255, 255, 0) 100%
     );
   }
   @media screen and (min-width: 30em) {
     background: linear-gradient(
       0deg,
-      rgba(255, 255, 255, 1) 98%,
+      var(--chakra-colors-gray-50) 98%,
       rgba(255, 255, 255, 0) 100%
     );
   }
   @media screen and (min-width: 62em) {
     background: linear-gradient(
       0deg,
-      rgba(255, 255, 255, 1) 90%,
+      var(--chakra-colors-gray-50) 90%,
       rgba(255, 255, 255, 0) 98%
     );
   }
   @media screen and (min-width: 80em) {
     background: linear-gradient(
       0deg,
-      rgba(255, 255, 255, 1) 88%,
+      var(--chakra-colors-gray-50) 90%,
       rgba(255, 255, 255, 0) 95%
     );
   }
@@ -212,6 +212,22 @@ footer a {
   }
 }
 
+.about-description {
+  width: 75%;
+  @media screen and (min-width: 22.5em) {
+    width: 100%;
+  }
+  @media screen and (min-width: 30em) {
+    width: 100%;
+  }
+  @media screen and (min-width: 48em) {
+    width: 80%;
+  }
+  @media screen and (min-width: 62em) {
+    width: 75%;
+  }
+}
+
 .grid {
   margin-bottom: 3rem;
 
@@ -260,9 +276,13 @@ footer a {
     box-shadow: none;
     cursor: pointer;
     transition: all 0.2s ease 0s;
-    border: 1px var(--chakra-colors-gray-300) solid;
     transform: scale(1);
     background: #fff;
+    border-radius: 15px;
+    box-shadow: var(--chakra-shadows-md);
+    .portfolio > img {
+      border-radius: 15px 15px 0 0;
+    }
     .portfolio-link {
       transition: opacity 0.2s ease 0s;
       opacity: 0%;
