@@ -208,7 +208,9 @@ footer a {
 
 .grid {
   margin-bottom: 3rem;
-
+  @media screen and (min-width: 62em) {
+    margin-bottom: 5rem;
+  }
   h3 {
     color: var(--chakra-colors-gray-500);
     font-size: 1.5rem;
