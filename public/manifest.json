@@ -6,19 +6,19 @@
       "src": "/pwa/icon-144.png",
       "type": "image/png",
       "sizes": "144x144",
-      "purpose": "maskable"
+      "purpose": "maskable any"
     },
     {
       "src": "/pwa/icon-192.png",
       "type": "image/png",
       "sizes": "192x192",
-      "purpose": "maskable"
+      "purpose": "maskable any"
     },
     {
       "src": "/pwa/icon-512.png",
       "type": "image/png",
       "sizes": "512x512",
-      "purpose": "maskable"
+      "purpose": "maskable any"
     }
   ],
   "background_color": "#ffffff",

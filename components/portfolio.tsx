@@ -13,7 +13,7 @@ export default function Portfolio({
     <LinkBox as="article" borderWidth="1px" rounded="md">
       <LinkOverlay href={url} isExternal>
         <Box overflow="hidden" className="portfolio">
-          <Image src={imageUrl} alt={imageAlt} />
+          <Image src={imageUrl} alt={imageAlt} loading="lazy" />
           <Box p="6">
             <Box
               mt="1"
@@ -41,6 +41,7 @@ export default function Portfolio({
                   width="30"
                   height="30"
                   title={`${icon} icon`}
+                  loading="lazy"
                 />
               ))}
               <ExternalLinkIcon className="portfolio-link" mx="2px" />

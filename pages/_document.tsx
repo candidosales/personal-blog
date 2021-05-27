@@ -1,17 +1,54 @@
-import Document, { Html, Head, Main, NextScript } from 'next/document'
+import Document, { Html, Head, Main, NextScript } from 'next/document';
 
-import { GA_TRACKING_ID } from "../utils/gtag";
+import { GA_TRACKING_ID } from '../utils/gtag';
 
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
-    const initialProps = await Document.getInitialProps(ctx)
-    return { ...initialProps }
+    const initialProps = await Document.getInitialProps(ctx);
+    return { ...initialProps };
   }
 
   render() {
     return (
       <Html lang="en">
         <Head>
+          <title>Candido Sales Gomes Portfolio</title>
+          <link rel="canonical" href="https://candidosales.me/" />
+          <link rel="shortcut icon" href="/favicon.jpg" type="image/png" />
+          <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+          <meta
+            name="viewport"
+            content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, user-scalable=no, viewport-fit=cover"
+          />
+          <meta
+            name="description"
+            content="Portfolio, side projects, the blog of the Candido Sales Gomes"
+          />
+          <meta property="og:locale" content="en" />
+          <meta property="og:type" content="website" />
+          <meta property="og:title" content="Candido Sales Gomes Portfolio" />
+          <meta
+            property="og:site_name"
+            content="Candido Sales Gomes Portfolio"
+          />
+          <meta
+            property="og:description"
+            content="Portfolio, side projects, the blog of the Candido Sales Gomes"
+          />
+          <meta property="og:url" content="https://candidosales.me/" />
+          <meta
+            property="og:image"
+            content="https://candidosales.me/card-social-media-1200.png"
+          />
+          <meta property="og:image:width" content="1200" />
+          <meta property="og:image:height" content="730" />
+          <meta name="twitter:creator" content="@candidosales" />
+          <meta name="twitter:site" content="@candidosales" />
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="theme-color" content="#ffffff" />
+          <link rel="shortcut icon" href="/pwa/icon-512.png" />
+          <link rel="apple-touch-icon" href="/pwa/icon-512.png" />
+          <link rel="manifest" href="/manifest.json" />
           {/* Global Site Tag (gtag.js) - Google Analytics */}
           <script
             async
@@ -35,8 +72,8 @@ class MyDocument extends Document {
           <NextScript />
         </body>
       </Html>
-    )
+    );
   }
 }
 
-export default MyDocument
+export default MyDocument;
