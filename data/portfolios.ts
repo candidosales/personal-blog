@@ -67,7 +67,7 @@ export const extras = [
     imageAlt: "We're Not Really Strangers",
     title: "We're Not Really Strangers",
     description:
-      'I ❤️ this game and wanted to create a possibility to play with my friends online and get to know each other even from a distance. (Fucking virus! 🤬)',
+      'I ❤️ this game and wanted to create a possibility to play with my friends online and get to know each other even from a distance. (COVID tough times 😞)',
     url: 'https://wnrs.app/',
     icons: ['nextjs', 'react', 'sass', 'vercel', 'pwa']
   },
