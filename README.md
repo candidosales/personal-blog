@@ -2,6 +2,12 @@
 
 Landing page for your personal portfolio made with [NextJS](https://nextjs.org/) and [Chakra UI](https://chakra-ui.com/)
 
+## Preview
+
+![demo.gif](./demo.gif)
+
+- [Candido Sales Gomes Portfolio](https://www.candidosales.me/)
+
 ## 🎯 Features
 
 - Dark mode;
