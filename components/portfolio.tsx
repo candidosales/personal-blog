@@ -13,7 +13,14 @@ export default function Portfolio({
     <LinkBox as="article">
       <LinkOverlay href={url} isExternal>
         <Flex className="portfolio" direction="column">
-          <Image src={imageUrl} alt={imageAlt} loading="lazy" />
+          <Box
+            className="portfolio-image"
+            height="200px"
+            backgroundImage={`url('${imageUrl}')`}
+            backgroundSize="cover"
+            backgroundPosition="center"
+            backgroundRepeat="no-repeat"
+          />
           <div className="article-wrap">
             <h4>{title}</h4>
             <p>{description}</p>
