@@ -82,7 +82,7 @@ export default function Topbar() {
               👋 Feel free to speak with me by one of the means below:
             </p>
             <Box className="modal-contact">
-              <Link href="mailto:candidosg@gmail.com" isExternal>
+              <Link href="mailto:candidosg@gmail.com" isExternal title="by E-mail ...">
                 <IconButton
                   variant="ghost"
                   size="md"
@@ -91,7 +91,7 @@ export default function Topbar() {
                 />
               </Link>
 
-              <Link href="https://wa.me/13068800349" isExternal>
+              <Link href="https://wa.me/13068800349" isExternal title="or WhatsApp">
                 <IconButton
                   variant="ghost"
                   size="md"
