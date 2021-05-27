@@ -40,6 +40,7 @@ class MyDocument extends Document {
           <meta name="twitter:creator" content="@candidosales" />
           <meta name="twitter:site" content="@candidosales" />
           <meta name="twitter:card" content="summary_large_image" />
+          <meta name='twitter:image' content='https://candidosales.me/card-social-media-1200.png' />
           <meta name="theme-color" content="#ffffff" />
           <link rel="shortcut icon" href="/pwa/icon-512.png" />
           <link rel="apple-touch-icon" href="/pwa/icon-512.png" />
