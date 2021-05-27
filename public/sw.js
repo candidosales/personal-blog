@@ -14,14 +14,14 @@
 // If the loader is already loaded, just stop.
 if (!self.define) {
   const singleRequire = (name) => {
-    if (name !== 'require') {
-      name = name + '.js';
+    if (name !== "require") {
+      name = name + ".js";
     }
     let promise = Promise.resolve();
     if (!registry[name]) {
       promise = new Promise(async (resolve) => {
-        if ('document' in self) {
-          const script = document.createElement('script');
+        if ("document" in self) {
+          const script = document.createElement("script");
           script.src = name;
           document.head.appendChild(script);
           script.onload = resolve;
@@ -46,7 +46,7 @@ if (!self.define) {
   };
 
   const registry = {
-    require: Promise.resolve(require)
+    require: Promise.resolve(require),
   };
 
   self.define = (moduleName, depsNames, factory) => {
@@ -57,14 +57,14 @@ if (!self.define) {
     registry[moduleName] = Promise.resolve().then(() => {
       let exports = {};
       const module = {
-        uri: location.origin + moduleName.slice(1)
+        uri: location.origin + moduleName.slice(1),
       };
       return Promise.all(
         depsNames.map((depName) => {
           switch (depName) {
-            case 'exports':
+            case "exports":
               return exports;
-            case 'module':
+            case "module":
               return module;
             default:
               return singleRequire(depName);
@@ -80,8 +80,8 @@ if (!self.define) {
     });
   };
 }
-define('./sw.js', ['./workbox-6b19f60b'], function (workbox) {
-  'use strict';
+define("./sw.js", ["./workbox-6b19f60b"], function (workbox) {
+  "use strict";
 
   /**
    * Welcome to your Workbox-powered service worker!
@@ -99,34 +99,34 @@ define('./sw.js', ['./workbox-6b19f60b'], function (workbox) {
   self.skipWaiting();
   workbox.clientsClaim();
   workbox.registerRoute(
-    '/',
+    "/",
     new workbox.NetworkFirst({
-      cacheName: 'start-url',
+      cacheName: "start-url",
       plugins: [
         {
-          cacheWillUpdate: async ({ request, response, event, state }) => {
-            if (response && response.type === 'opaqueredirect') {
+          cacheWillUpdate: async ({request, response, event, state}) => {
+            if (response && response.type === "opaqueredirect") {
               return new Response(response.body, {
                 status: 200,
-                statusText: 'OK',
-                headers: response.headers
+                statusText: "OK",
+                headers: response.headers,
               });
             }
 
             return response;
-          }
-        }
-      ]
+          },
+        },
+      ],
     }),
-    'GET'
+    "GET"
   );
   workbox.registerRoute(
     /.*/i,
     new workbox.NetworkOnly({
-      cacheName: 'dev',
-      plugins: []
+      cacheName: "dev",
+      plugins: [],
     }),
-    'GET'
+    "GET"
   );
 });
 //# sourceMappingURL=sw.js.map
