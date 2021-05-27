@@ -44,7 +44,7 @@ export default function Home() {
             <section className="grid">
               <div className="grid-header">
                 <h3>🧳 Portfolio</h3>
-                <p>Some open source projects that I maintain</p>
+                <p>Some open source projects that I've built and maintain</p>
               </div>
               <SimpleGrid
                 className="portfolios"
