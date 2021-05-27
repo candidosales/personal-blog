@@ -24,11 +24,11 @@ class MyDocument extends Document {
           <meta property="og:title" content="Candido Sales Gomes Portfolio" />
           <meta
             property="og:site_name"
-            content="Candido Sales Gomes Portfolio"
+            content="Candido Sales Gomes"
           />
           <meta
             property="og:description"
-            content="Portfolio, side projects, the blog of the Candido Sales Gomes"
+            content="Portfolio, side projects, the blog of the Candido Sales Gomes and among other things"
           />
           <meta property="og:url" content="https://www.candidosales.me/" />
           <meta
