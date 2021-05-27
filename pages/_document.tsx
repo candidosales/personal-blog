@@ -12,14 +12,9 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          <title>Candido Sales Gomes Portfolio</title>
           <link rel="canonical" href="https://candidosales.me/" />
           <link rel="shortcut icon" href="/favicon.jpg" type="image/png" />
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-          <meta
-            name="viewport"
-            content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, user-scalable=no, viewport-fit=cover"
-          />
           <meta
             name="description"
             content="Portfolio, side projects, the blog of the Candido Sales Gomes"
