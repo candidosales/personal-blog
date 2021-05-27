@@ -1,6 +1,6 @@
 {
   "name": "Candido Sales Gomes",
-  "short_name": "CSG",
+  "short_name": "Candido Sales",
   "icons": [
     {
       "src": "/pwa/icon-144.png",
@@ -22,7 +22,7 @@
     }
   ],
   "background_color": "#ffffff",
-  "description": "Candido Sales Gomes Portfolio",
+  "description": "Candido Sales Gomes - Portfolio",
   "display": "standalone",
   "orientation": "portrait",
   "start_url": "/",

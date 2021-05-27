@@ -13,7 +13,7 @@ class MyDocument extends Document {
       <Html lang="en">
         <Head>
           <link rel="canonical" href="https://www.candidosales.me/" />
-          <link rel="shortcut icon" href="/favicon.jpg" type="image/png" />
+          <link rel="shortcut icon" href="/favicon.png" type="image/png" />
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
           <meta
             name="description"

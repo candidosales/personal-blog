@@ -10,7 +10,6 @@ import Head from 'next/head';
 const theme = extendTheme({
   config: {
     useSystemColorMode: true,
-    // initialColorMode: "dark"
   }
 });
 
