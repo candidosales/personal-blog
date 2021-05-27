@@ -44,8 +44,8 @@ export const portfolio = [
   },
   {
     imageUrl: '/personal-blog.png',
-    imageAlt: 'Personal Blog',
-    title: 'Personal Blog',
+    imageAlt: 'Personal Portfolio',
+    title: 'Personal Portfolio',
     description: 'Landing page for your personal portfolio',
     url: 'https://github.com/candidosales/personal-blog',
     icons: ['nextjs', 'react', 'sass', 'vercel', 'pwa']
