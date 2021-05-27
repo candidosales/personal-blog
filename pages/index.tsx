@@ -22,7 +22,6 @@ export default function Home() {
               <p className="about-description">
                 I'm a{' '}
                 <Link
-                  color="blue.600"
                   href="https://en.wikipedia.org/wiki/Saskatoon"
                   isExternal
                 >
@@ -33,7 +32,6 @@ export default function Home() {
                 designing) exceptional digital experiences. Currently, I'm an
                 software engineer at{' '}
                 <Link
-                  color="blue.600"
                   href="https://www.vendasta.com/"
                   isExternal
                 >

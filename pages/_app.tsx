@@ -1,10 +1,18 @@
 import * as gtag from '../utils/gtag';
 import { AppProps } from 'next/app';
-import { ChakraProvider } from '@chakra-ui/react';
+import { ChakraProvider, extendTheme } from '@chakra-ui/react';
 import { useEffect } from 'react';
 import { useRouter } from 'next/router';
 import '../styles/global.scss';
 import Head from 'next/head';
+
+
+const theme = extendTheme({
+  config: {
+    useSystemColorMode: true,
+    // initialColorMode: "dark"
+  }
+});
 
 export default function App({ Component, pageProps }: AppProps) {
   const router = useRouter();
@@ -19,7 +27,7 @@ export default function App({ Component, pageProps }: AppProps) {
     };
   }, [router.events]);
   return (
-    <ChakraProvider>
+    <ChakraProvider theme={theme}>
       <Head>
         <title>Candido Sales Gomes</title>
         <meta

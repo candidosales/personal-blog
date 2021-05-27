@@ -12,10 +12,11 @@ body {
 
 a {
   font-weight: bold;
+  color: var(--chakra-colors-blue-600);
 }
 
 .cover {
-  background-image: url('../public/background-2.jpg');
+  background-image: url('../public/background-light.jpg');
   display: flex;
   flex-direction: column;
   background-size: contain;
@@ -284,6 +285,7 @@ footer a {
       border-radius: 15px 15px 0 0;
     }
     .portfolio-link {
+      color: var(--chakra-colors-blue-600);
       transition: opacity 0.2s ease 0s;
       opacity: 0%;
     }
@@ -343,6 +345,7 @@ footer a {
   svg {
     width: 35px;
     height: 35px;
+    color: var(--chakra-colors-gray-600);
   }
 }
 
@@ -356,6 +359,7 @@ footer a {
   svg {
     width: 35px;
     height: 35px;
+    color: var(--chakra-colors-gray-600);
   }
 }
 
@@ -364,4 +368,66 @@ footer a {
   top: 1rem;
   right: 1rem;
   opacity: 0.5;
+}
+
+
+.chakra-ui-dark {
+  background-color: var(--chakra-colors-gray-800);
+  a {
+    color: var(--chakra-colors-blue-300);
+  }
+  .cover {
+    background-image: url('../public/background-dark.png');
+  }
+  .overlay {
+    @media screen and (min-width: 22.5em) {
+      background: linear-gradient(
+        0deg,
+        var(--chakra-colors-gray-800) 99%,
+        rgba(255, 255, 255, 0) 100%
+      );
+    }
+    @media screen and (min-width: 30em) {
+      background: linear-gradient(
+        0deg,
+        var(--chakra-colors-gray-800) 98%,
+        rgba(255, 255, 255, 0) 100%
+      );
+    }
+    @media screen and (min-width: 62em) {
+      background: linear-gradient(
+        0deg,
+        var(--chakra-colors-gray-800) 90%,
+        rgba(255, 255, 255, 0) 98%
+      );
+    }
+    @media screen and (min-width: 80em) {
+      background: linear-gradient(
+        0deg,
+        var(--chakra-colors-gray-800) 90%,
+        rgba(255, 255, 255, 0) 95%
+      );
+    }
+  }
+  .about h1 {
+    color: var(--chakra-colors-gray-100);
+  }
+  .presentation {
+    color: var(--chakra-colors-gray-300);
+  }
+  .grid-header p {
+    color: var(--chakra-colors-gray-100);
+  }
+  .portfolios article {
+    background-color: var(--chakra-colors-gray-700);
+    a {
+      color: var(--chakra-colors-gray-100);
+    }
+    .portfolio-link {
+      color: var(--chakra-colors-blue-300);
+    }
+  }
+  .header-actions svg, .modal-contact svg {
+    color: var(--chakra-colors-gray-300);
+  }
 }

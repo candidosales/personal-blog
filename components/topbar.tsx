@@ -42,7 +42,6 @@ export default function Topbar() {
           <Link href="https://www.linkedin.com/in/candidosales/" isExternal>
             <IconButton
               variant="ghost"
-              color="gray.600"
               size="md"
               aria-label="Linkedin"
               icon={<RiLinkedinBoxFill />}
@@ -52,7 +51,6 @@ export default function Topbar() {
         <Tooltip hasArrow label="" placement="auto">
           <Link href="https://github.com/candidosales" isExternal>
             <IconButton
-              color="gray.600"
               variant="ghost"
               size="md"
               aria-label="Github"
@@ -63,7 +61,6 @@ export default function Topbar() {
         <Tooltip hasArrow label="" placement="auto">
           <Link href="https://medium.com/@candidosales" isExternal>
             <IconButton
-              color="gray.600"
               variant="ghost"
               size="md"
               aria-label="Medium"
@@ -87,7 +84,6 @@ export default function Topbar() {
             <Box className="modal-contact">
               <Link href="mailto:candidosg@gmail.com" isExternal>
                 <IconButton
-                  color="gray.600"
                   variant="ghost"
                   size="md"
                   aria-label="E-mail"
@@ -97,7 +93,6 @@ export default function Topbar() {
 
               <Link href="https://wa.me/13068800349" isExternal>
                 <IconButton
-                  color="gray.600"
                   variant="ghost"
                   size="md"
                   aria-label="WhatsApp"
