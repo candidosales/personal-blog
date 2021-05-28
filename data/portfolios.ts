@@ -40,7 +40,7 @@ export const portfolio = [
     description:
       'Landing page for advertising and sales of books to independent authors',
     url: 'https://github.com/candidosales/landing-page-book',
-    icons: ['sass', 'bootstrap', 'webpack']
+    icons: ['sass', 'bootstrap', 'webpack', 'netlify']
   },
   {
     imageUrl: '/personal-blog.png',
