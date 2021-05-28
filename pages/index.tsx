@@ -18,7 +18,7 @@ export default function Home() {
           <main>
             <section className="about">
               <Topbar></Topbar>
-              <p className="presentation">Hi, my name is</p>
+              <p className="presentation">👋 Hi, my name is</p>
               <h1>Cândido Sales.</h1>
               <h2>
                 I build things for <br />
