@@ -27,7 +27,7 @@ export default function Portfolio({
             <Box className="icons">
               {techs.length > 0 &&
                 techs.map((tech, index) => (
-                  <Tooltip label={tech.name}>
+                  <Tooltip key={index} label={tech.name}>
                     <img
                       key={index}
                       src={`/devicon/${tech.icon}.svg`}
