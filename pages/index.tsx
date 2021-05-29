@@ -58,7 +58,7 @@ export default function Home() {
                     title={p.title}
                     description={p.description}
                     url={p.url}
-                    icons={p.icons}
+                    techs={p.techs}
                   />
                 ))}
               </SimpleGrid>
@@ -84,7 +84,7 @@ export default function Home() {
                     title={p.title}
                     description={p.description}
                     url={p.url}
-                    icons={p.icons}
+                    techs={p.techs}
                   />
                 ))}
               </SimpleGrid>
@@ -103,15 +103,15 @@ export default function Home() {
                 columns={{sm: 1, md: 2, lg: 3}}
                 gap={6}
               >
-                {volunteer.map((e, index) => (
+                {volunteer.map((p, index) => (
                   <Portfolio
                     key={index}
-                    imageUrl={e.imageUrl}
-                    imageAlt={e.imageAlt}
-                    title={e.title}
-                    description={e.description}
-                    url={e.url}
-                    icons={e.icons}
+                    imageUrl={p.imageUrl}
+                    imageAlt={p.imageAlt}
+                    title={p.title}
+                    description={p.description}
+                    url={p.url}
+                    techs={p.techs}
                   />
                 ))}
               </SimpleGrid>
@@ -126,15 +126,15 @@ export default function Home() {
                 columns={{sm: 1, md: 2, lg: 3}}
                 gap={6}
               >
-                {posts.map((e, index) => (
+                {posts.map((p, index) => (
                   <Portfolio
                     key={index}
-                    imageUrl={e.imageUrl}
-                    imageAlt={e.imageAlt}
-                    title={e.title}
-                    description={e.description}
-                    url={e.url}
-                    icons={e.icons}
+                    imageUrl={p.imageUrl}
+                    imageAlt={p.imageAlt}
+                    title={p.title}
+                    description={p.description}
+                    url={p.url}
+                    techs={[]}
                   />
                 ))}
               </SimpleGrid>

@@ -1,4 +1,4 @@
-import { Box, Image, LinkBox, LinkOverlay, Flex } from '@chakra-ui/react';
+import { Box, Image, LinkBox, LinkOverlay, Flex, Tooltip } from '@chakra-ui/react';
 import { ExternalLinkIcon } from '@chakra-ui/icons';
 
 export default function Portfolio({
@@ -7,7 +7,7 @@ export default function Portfolio({
   title,
   description,
   url,
-  icons
+  techs
 }) {
   return (
     <LinkBox as="article">
@@ -25,16 +25,19 @@ export default function Portfolio({
             <h4>{title}</h4>
             <p>{description}</p>
             <Box className="icons">
-              {icons.length > 0 &&
-                icons.map((icon, index) => (
-                  <img
-                    key={index}
-                    src={`/devicon/${icon}.svg`}
-                    width="30"
-                    height="30"
-                    title={`${icon} icon`}
-                    loading="lazy"
-                  />
+              {techs.length > 0 &&
+                techs.map((tech, index) => (
+                  <Tooltip label={tech.name}>
+                    <img
+                      key={index}
+                      src={`/devicon/${tech.icon}.svg`}
+                      width="30"
+                      height="30"
+                      title={`${tech.icon} icon`}
+                      loading="lazy"
+                    />
+                  </Tooltip>
+
                 ))}
               <ExternalLinkIcon className="portfolio-link" mx="2px" />
             </Box>
