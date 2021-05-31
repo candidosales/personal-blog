@@ -260,6 +260,9 @@ footer a {
     background: #fff;
     border-radius: 15px;
     box-shadow: var(--chakra-shadows-md);
+    a {
+      width: 100%;
+    }
     .portfolio-image {
       border-radius: 15px 15px 0 0;
     }
