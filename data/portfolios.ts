@@ -1,6 +1,6 @@
 export const portfolio = [
   {
-    imageUrl: "https://i.imgur.com/zazY53M.gif",
+    imageUrl: "/dependency-report.gif",
     imageAlt: "Dependencies report",
     title: "Dependencies report",
     description:

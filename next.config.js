@@ -15,9 +15,6 @@ module.exports = withPWA({
     dest: "public",
     disable: !isProd,
   },
-  future: {
-    webpack5: true,
-  },
   images: {
     domains: ["pbs.twimg.com", "bit.ly"],
   },

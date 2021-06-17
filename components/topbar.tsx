@@ -1,7 +1,6 @@
 import {
   Button,
   IconButton,
-  Image,
   Link,
   Tooltip,
   Modal,
@@ -10,30 +9,33 @@ import {
   ModalContent,
   ModalHeader,
   ModalOverlay,
-  useDisclosure
-} from '@chakra-ui/react';
+  useDisclosure,
+  Stack,
+} from "@chakra-ui/react";
 import {
   RiLinkedinBoxFill,
   RiGithubFill,
   RiMediumFill,
   RiMailFill,
-  RiWhatsappFill
-} from 'react-icons/ri';
-import { Box } from '@chakra-ui/react';
+  RiWhatsappFill,
+} from "react-icons/ri";
+import Image from "next/image";
 
 export default function Topbar() {
-  const { isOpen, onOpen, onClose } = useDisclosure();
+  const {isOpen, onOpen, onClose} = useDisclosure();
 
   return (
     <header className="header">
-      <Image
-        className="avatar"
-        src="/me.png"
-        width={100}
-        height={100}
-        alt="Profile image"
-        title="Profile image"
-      />
+      <div className="avatar">
+        <Image
+          src="/me.png"
+          width={100}
+          height={100}
+          alt="Profile image"
+          title="Profile image"
+          loading="lazy"
+        />
+      </div>
       <div className="header-actions">
         <Button colorScheme="whatsapp" size="md" onClick={onOpen}>
           get in touch
@@ -81,25 +83,34 @@ export default function Topbar() {
               <br />
               👋 Feel free to speak with me by one of the means below:
             </p>
-            <Box className="modal-contact">
-              <Link href="mailto:candidosg@gmail.com" isExternal title="by E-mail ...">
-                <IconButton
-                  variant="ghost"
-                  size="md"
-                  aria-label="E-mail"
-                  icon={<RiMailFill />}
-                />
+            <Stack direction="row" spacing={4} className="modal-contact">
+              <Link
+                href="mailto:candidosg@gmail.com"
+                isExternal
+                title="by E-mail ..."
+              >
+                <Button
+                  leftIcon={<RiMailFill />}
+                  colorScheme="whatsapp"
+                  variant="solid"
+                >
+                  E-mail
+                </Button>
               </Link>
-
-              <Link href="https://wa.me/13068800349" isExternal title="or WhatsApp">
-                <IconButton
-                  variant="ghost"
-                  size="md"
-                  aria-label="WhatsApp"
-                  icon={<RiWhatsappFill />}
-                />
+              <Link
+                href="https://wa.me/13068800349"
+                isExternal
+                title="or WhatsApp"
+              >
+                <Button
+                  leftIcon={<RiWhatsappFill />}
+                  colorScheme="whatsapp"
+                  variant="solid"
+                >
+                  WhatsApp
+                </Button>
               </Link>
-            </Box>
+            </Stack>
           </ModalBody>
         </ModalContent>
       </Modal>
