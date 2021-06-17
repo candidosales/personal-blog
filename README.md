@@ -12,8 +12,9 @@ Landing page for your personal portfolio made with [NextJS](https://nextjs.org/)
 
 - Dark mode;
 - Integrate with Google Analytics;
-- Loading lazy images;
-- PWA;
+- [Lazy loading images](https://web.dev/browser-level-image-lazy-loading/);
+- [next/image](https://nextjs.org/docs/basic-features/image-optimization)
+- [PWA](https://web.dev/progressive-web-apps/);
 
 ## ⚙️ How to setup
 
