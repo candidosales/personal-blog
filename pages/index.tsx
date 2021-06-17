@@ -1,3 +1,4 @@
+import React from 'react';
 import Portfolio from "../components/portfolio";
 import Topbar from "../components/topbar";
 import {ExternalLinkIcon} from "@chakra-ui/icons";

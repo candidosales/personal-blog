@@ -1,3 +1,4 @@
+import React from 'react';
 import { Box, LinkBox, LinkOverlay, Flex, Tooltip } from '@chakra-ui/react';
 import { ExternalLinkIcon } from '@chakra-ui/icons';
 import Image from 'next/image'
@@ -17,6 +18,7 @@ export default function Portfolio({
           <div className="portfolio-image">
             <Image
               src={imageUrl}
+              alt={imageAlt}
               width={373}
               height={200}
               loading="lazy"
