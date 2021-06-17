@@ -9,7 +9,8 @@
     "build": "next build",
     "start": "next start",
     "format": "prettier --write .",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "lint": "npx next lint"
   },
   "lint-staged": {
     "**/*": "prettier --write --ignore-unknown"

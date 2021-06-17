@@ -8,6 +8,7 @@ module.exports = {
     "eslint:recommended",
     "plugin:react/recommended",
     "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/recommended"
   ],
   parser: "@typescript-eslint/parser",
   parserOptions: {
@@ -22,5 +23,10 @@ module.exports = {
     "react/prop-types": [0, {}], // this is dumb, why is this still recommended
     "react/no-unescaped-entities": [0, {}],
     "no-unused-vars": [1, {}],
+  },
+  settings: {
+    react: {
+      version: "17.0.2",
+    },
   },
 };
