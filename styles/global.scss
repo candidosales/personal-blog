@@ -64,7 +64,7 @@ a {
   @media screen and (min-width: 62em) {
     background: linear-gradient(
       0deg,
-      var(--chakra-colors-gray-50) 90%,
+      var(--chakra-colors-gray-50) 93%,
       rgba(255, 255, 255, 0) 98%
     );
   }
@@ -406,7 +406,7 @@ footer a {
     @media screen and (min-width: 62em) {
       background: linear-gradient(
         0deg,
-        var(--chakra-colors-gray-800) 90%,
+        var(--chakra-colors-gray-800) 93%,
         rgba(255, 255, 255, 0) 98%
       );
     }
@@ -447,4 +447,8 @@ footer a {
 
 .container-flex {
   padding: 0 1rem;
+}
+
+.chakra-accordion {
+  padding: 1rem 0;
 }

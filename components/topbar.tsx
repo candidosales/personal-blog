@@ -12,6 +12,12 @@ import {
   ModalOverlay,
   useDisclosure,
   Stack,
+  Accordion,
+  AccordionItem,
+  AccordionButton,
+  AccordionPanel,
+  AccordionIcon,
+  Box
 } from "@chakra-ui/react";
 import {
   RiLinkedinBoxFill,
@@ -79,11 +85,51 @@ export default function Topbar() {
           <ModalCloseButton />
           <ModalBody>
             <p>
-              It will be a pleasure to talk to you about any new project,
-              consultancy or mentoring. <br />
-              <br />
-              👋 Feel free to speak with me by one of the means below:
+              It will be a pleasure to talk to you about: <br />
             </p>
+            <Accordion defaultIndex={[0]} allowMultiple>
+              <AccordionItem>
+                <h2>
+                  <AccordionButton>
+                    <Box flex="1" textAlign="left">
+                    💡 New project
+                    </Box>
+                    <AccordionIcon />
+                  </AccordionButton>
+                </h2>
+                <AccordionPanel pb={4}>
+                  I'm always interested in knowing your ideas, analyzing feasibility and we can even build together 😊.
+                </AccordionPanel>
+              </AccordionItem>
+
+              <AccordionItem>
+                <h2>
+                  <AccordionButton>
+                    <Box flex="1" textAlign="left">
+                    📚 Consultancy
+                    </Box>
+                    <AccordionIcon />
+                  </AccordionButton>
+                </h2>
+                <AccordionPanel pb={4}>
+                  I have experience in various markets such as e-commerce, finance, marketing, call center, security and with that I can share some of my knowledge and help your project or idea.
+                </AccordionPanel>
+              </AccordionItem>
+              <AccordionItem>
+                <h2>
+                  <AccordionButton>
+                    <Box flex="1" textAlign="left">
+                    👨🏻‍🏫 Mentoring
+                    </Box>
+                    <AccordionIcon />
+                  </AccordionButton>
+                </h2>
+                <AccordionPanel pb={4}>
+                I would like to hear your story and present the possibilities that computing and the technology market can offer your career 😃.
+                </AccordionPanel>
+              </AccordionItem>
+            </Accordion>
+            <p>👋 Feel free to speak with me by</p>
             <Stack direction="row" spacing={4} className="modal-contact">
               <Link
                 href="mailto:candidosg@gmail.com"
