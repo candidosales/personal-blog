@@ -8,11 +8,6 @@ Landing page for your personal portfolio made with [NextJS](https://nextjs.org/)
 
 - [Candido Sales Gomes Portfolio](https://www.candidosales.me/)
 
-## Install
-
-- https://imageoptim.com/mac
-- https://pngmini.com/
-
 ## 🎯 Features
 
 - Dark mode;
@@ -20,12 +15,19 @@ Landing page for your personal portfolio made with [NextJS](https://nextjs.org/)
 - [Lazy loading images](https://web.dev/browser-level-image-lazy-loading/);
 - [next/image](https://nextjs.org/docs/basic-features/image-optimization)
 - [PWA](https://web.dev/progressive-web-apps/);
+- Optmize images before to send it. [ImageOptim](https://github.com/JamieMason/ImageOptim-CLI);
 
 ## ⚙️ How to setup
 
 ```bash
 npm install
 npm run dev
+```
+
+## Dependencies
+
+```bash
+npm install -g imageoptim-cli
 ```
 
 ## 📚 Reference

@@ -11,10 +11,10 @@
     "format": "prettier --write .",
     "prepare": "husky install",
     "lint": "npx next lint",
-    "imageoptim": "yarn imageoptim:gif && yarn imageoptim:jpg && yarn imageoptim:png",
-    "imageoptim:gif": "imageoptim \"static/**/*.gif\"",
-    "imageoptim:jpg": "imageoptim \"static/**/*.jpg\"",
-    "imageoptim:png": "imageoptim --no-imageoptim --imagealpha \"static/**/*.png\"",
+    "imageoptim": "npm run imageoptim:gif && npm run imageoptim:jpg && npm run imageoptim:png",
+    "imageoptim:gif": "imageoptim \"public/**/*.gif\"",
+    "imageoptim:jpg": "imageoptim \"public/**/*.jpg\"",
+    "imageoptim:png": "imageoptim --no-imageoptim --imagealpha \"public/**/*.png\""
   },
   "lint-staged": {
     "*.{html,js,json,md,mdx,mjs,yml}": [
