@@ -1,15 +1,24 @@
-import React from 'react';
-import Document, { Html, Head, Main, NextScript } from 'next/document';
+import React from "react";
+import Document, {
+  Html,
+  Head,
+  Main,
+  NextScript,
+  DocumentContext,
+  DocumentInitialProps,
+} from "next/document";
 
-import { GA_TRACKING_ID } from '../utils/gtag';
+import {GA_TRACKING_ID} from "../utils/gtag";
 
 class MyDocument extends Document {
-  static async getInitialProps(ctx) {
+  static async getInitialProps(
+    ctx: DocumentContext
+  ): Promise<DocumentInitialProps> {
     const initialProps = await Document.getInitialProps(ctx);
-    return { ...initialProps };
+    return {...initialProps};
   }
 
-  render() {
+  render(): any {
     return (
       <Html lang="en">
         <Head>
@@ -23,10 +32,7 @@ class MyDocument extends Document {
           <meta property="og:locale" content="en" />
           <meta property="og:type" content="website" />
           <meta property="og:title" content="Candido Sales Gomes Portfolio" />
-          <meta
-            property="og:site_name"
-            content="Candido Sales Gomes"
-          />
+          <meta property="og:site_name" content="Candido Sales Gomes" />
           <meta
             property="og:description"
             content="Portfolio, side projects, the blog of the Candido Sales Gomes and among other things"
@@ -63,7 +69,7 @@ class MyDocument extends Document {
               gtag('config', '${GA_TRACKING_ID}', {
                 page_path: window.location.pathname,
               });
-          `
+          `,
             }}
           />
         </Head>

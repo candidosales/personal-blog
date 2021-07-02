@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import {
   Button,
   IconButton,
@@ -17,7 +17,7 @@ import {
   AccordionButton,
   AccordionPanel,
   AccordionIcon,
-  Box
+  Box,
 } from "@chakra-ui/react";
 import {
   RiLinkedinBoxFill,
@@ -28,7 +28,7 @@ import {
 } from "react-icons/ri";
 import Image from "next/image";
 
-export default function Topbar() {
+const Topbar = (): any => {
   const {isOpen, onOpen, onClose} = useDisclosure();
 
   return (
@@ -92,13 +92,14 @@ export default function Topbar() {
                 <h2>
                   <AccordionButton>
                     <Box flex="1" textAlign="left">
-                    💡 New project
+                      💡 New project
                     </Box>
                     <AccordionIcon />
                   </AccordionButton>
                 </h2>
                 <AccordionPanel pb={4}>
-                  I'm always interested in knowing your ideas, analyzing feasibility and we can even build together 😊.
+                  I'm always interested in knowing your ideas, analyzing
+                  feasibility and we can even build together 😊.
                 </AccordionPanel>
               </AccordionItem>
 
@@ -106,26 +107,30 @@ export default function Topbar() {
                 <h2>
                   <AccordionButton>
                     <Box flex="1" textAlign="left">
-                    📚 Consultancy
+                      📚 Consultancy
                     </Box>
                     <AccordionIcon />
                   </AccordionButton>
                 </h2>
                 <AccordionPanel pb={4}>
-                  I have experience in various markets such as e-commerce, finance, marketing, call center, security and with that I can share some of my knowledge and help your project or idea.
+                  I have experience in various markets such as e-commerce,
+                  finance, marketing, call center, security and with that I can
+                  share some of my knowledge and help your project or idea.
                 </AccordionPanel>
               </AccordionItem>
               <AccordionItem>
                 <h2>
                   <AccordionButton>
                     <Box flex="1" textAlign="left">
-                    👨🏻‍🏫 Mentoring
+                      👨🏻‍🏫 Mentoring
                     </Box>
                     <AccordionIcon />
                   </AccordionButton>
                 </h2>
                 <AccordionPanel pb={4}>
-                I would like to hear your story and present the possibilities that computing and the technology market can offer your career 😃.
+                  I would like to hear your story and present the possibilities
+                  that computing and the technology market can offer your career
+                  😃.
                 </AccordionPanel>
               </AccordionItem>
             </Accordion>
@@ -163,4 +168,6 @@ export default function Topbar() {
       </Modal>
     </header>
   );
-}
+};
+
+export default Topbar;

@@ -1,31 +1,31 @@
-import * as gtag from '../utils/gtag';
-import React from 'react';
-import { AppProps } from 'next/app';
-import { ChakraProvider, extendTheme } from '@chakra-ui/react';
-import { useEffect } from 'react';
-import { useRouter } from 'next/router';
-import '../styles/global.scss';
-import Head from 'next/head';
-
+import * as gtag from "../utils/gtag";
+import React from "react";
+import {AppProps} from "next/app";
+import {ChakraProvider, extendTheme} from "@chakra-ui/react";
+import {useEffect} from "react";
+import {useRouter} from "next/router";
+import "../styles/global.scss";
+import Head from "next/head";
 
 const theme = extendTheme({
   config: {
     useSystemColorMode: true,
-  }
+  },
 });
 
-export default function App({ Component, pageProps }: AppProps) {
+const App = ({Component, pageProps}: AppProps): any => {
   const router = useRouter();
 
   useEffect(() => {
     const handleRouteChange = (url: URL) => {
       gtag.pageview(url);
     };
-    router.events.on('routeChangeComplete', handleRouteChange);
+    router.events.on("routeChangeComplete", handleRouteChange);
     return () => {
-      router.events.off('routeChangeComplete', handleRouteChange);
+      router.events.off("routeChangeComplete", handleRouteChange);
     };
   }, [router.events]);
+
   return (
     <ChakraProvider theme={theme}>
       <Head>
@@ -38,4 +38,6 @@ export default function App({ Component, pageProps }: AppProps) {
       <Component {...pageProps} />
     </ChakraProvider>
   );
-}
+};
+
+export default App;
