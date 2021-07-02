@@ -8,6 +8,11 @@ Landing page for your personal portfolio made with [NextJS](https://nextjs.org/)
 
 - [Candido Sales Gomes Portfolio](https://www.candidosales.me/)
 
+## Install
+
+- https://imageoptim.com/mac
+- https://pngmini.com/
+
 ## 🎯 Features
 
 - Dark mode;

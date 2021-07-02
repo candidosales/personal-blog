@@ -10,10 +10,29 @@
     "start": "next start",
     "format": "prettier --write .",
     "prepare": "husky install",
-    "lint": "npx next lint"
+    "lint": "npx next lint",
+    "imageoptim": "yarn imageoptim:gif && yarn imageoptim:jpg && yarn imageoptim:png",
+    "imageoptim:gif": "imageoptim \"static/**/*.gif\"",
+    "imageoptim:jpg": "imageoptim \"static/**/*.jpg\"",
+    "imageoptim:png": "imageoptim --no-imageoptim --imagealpha \"static/**/*.png\"",
   },
   "lint-staged": {
-    "**/*": "prettier --write --ignore-unknown"
+    "*.{html,js,json,md,mdx,mjs,yml}": [
+      "prettier --write",
+      "git add"
+    ],
+    "*.gif": [
+      "imageoptim",
+      "git add"
+    ],
+    "*.jpg": [
+      "imageoptim",
+      "git add"
+    ],
+    "*.png": [
+      "imageoptim --no-imageoptim --imagealpha",
+      "git add"
+    ]
   },
   "dependencies": {
     "@chakra-ui/icons": "^1.0.13",
