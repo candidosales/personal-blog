@@ -35,7 +35,7 @@ const Topbar = (): any => {
     <header className="header">
       <div className="avatar">
         <Image
-          src="/me.png"
+          src="/me-2.png"
           width={100}
           height={100}
           alt="Profile image"
