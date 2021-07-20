@@ -44,7 +44,7 @@ const Topbar = (): any => {
         />
       </div>
       <div className="header-actions">
-        <Button colorScheme="whatsapp" size="md" onClick={onOpen}>
+        <Button colorScheme="whatsapp" size="sm" onClick={onOpen}>
           get in touch
         </Button>
         <Tooltip hasArrow label="" placement="auto">

@@ -28,52 +28,50 @@ a {
   background-repeat: no-repeat;
   position: relative;
   min-height: 400px;
+
   @media screen and (min-width: 22.5em) {
     background-position-y: -50px;
   }
+
   @media screen and (min-width: 30em) {
     background-position-y: -50px;
   }
+
   @media screen and (min-width: 62em) {
     background-position-y: -100px;
   }
 }
 
 .overlay {
-  background: linear-gradient(
-    0deg,
-    var(--chakra-colors-gray-50) 85%,
-    rgba(255, 255, 255, 0) 95%
-  );
+  background: linear-gradient(0deg,
+      var(--chakra-colors-gray-50) 85%,
+      rgba(255, 255, 255, 0) 95%);
   height: 100%;
   display: flex;
+  flex-direction: column;
+
   @media screen and (min-width: 22.5em) {
-    background: linear-gradient(
-      0deg,
-      var(--chakra-colors-gray-50) 99%,
-      rgba(255, 255, 255, 0) 100%
-    );
+    background: linear-gradient(0deg,
+        var(--chakra-colors-gray-50) 99%,
+        rgba(255, 255, 255, 0) 100%);
   }
+
   @media screen and (min-width: 30em) {
-    background: linear-gradient(
-      0deg,
-      var(--chakra-colors-gray-50) 98%,
-      rgba(255, 255, 255, 0) 100%
-    );
+    background: linear-gradient(0deg,
+        var(--chakra-colors-gray-50) 98%,
+        rgba(255, 255, 255, 0) 100%);
   }
+
   @media screen and (min-width: 62em) {
-    background: linear-gradient(
-      0deg,
-      var(--chakra-colors-gray-50) 93%,
-      rgba(255, 255, 255, 0) 98%
-    );
+    background: linear-gradient(0deg,
+        var(--chakra-colors-gray-50) 93%,
+        rgba(255, 255, 255, 0) 98%);
   }
+
   @media screen and (min-width: 80em) {
-    background: linear-gradient(
-      0deg,
-      var(--chakra-colors-gray-50) 90%,
-      rgba(255, 255, 255, 0) 95%
-    );
+    background: linear-gradient(0deg,
+        var(--chakra-colors-gray-50) 90%,
+        rgba(255, 255, 255, 0) 95%);
   }
 }
 
@@ -83,6 +81,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .header {
@@ -91,6 +90,72 @@ main {
   justify-content: space-between;
   margin-bottom: 3rem;
   align-items: center;
+
+  background: var(--chakra-colors-gray-800);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 8px;
+  z-index: 1;
+
+  @media screen and (min-width: 22.5em) {
+    background: var(--chakra-colors-gray-800);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 16px;
+    z-index: 1;
+  }
+
+  @media screen and (min-width: 30em) {
+    background: var(--chakra-colors-gray-800);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 16px;
+    z-index: 1;
+  }
+
+  @media screen and (min-width: 48em) {
+    background: none;
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 1rem 0;
+  }
+
+  .avatar div {
+    border-radius: 50px;
+  }
+
+  .avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    padding-right: 8px;
+    align-items: center;
+    display: flex;
+
+    @media screen and (min-width: 22.5em) {
+      width: 40px;
+      height: 40px;
+    }
+
+    @media screen and (min-width: 30em) {
+      width: 60px;
+      height: 60px;
+    }
+
+    @media screen and (min-width: 48em) {
+      width: 100px;
+      height: 100px;
+    }
+
+    img {
+      border-radius: 50px;
+      box-shadow: var(--chakra-shadows-xl);
+    }
+  }
 }
 
 footer {
@@ -99,12 +164,14 @@ footer {
   display: flex;
   justify-content: space-between;
   font-size: 0.8rem;
+
   p {
     display: flex;
     flex-direction: row;
     line-height: 1rem;
     align-items: center;
   }
+
   a {
     margin: 0 0.2rem;
   }
@@ -132,23 +199,23 @@ footer a {
 
 .about {
   padding: 2rem 0;
+
   @media screen and (min-width: 22.5em) {
     padding: 2rem 0;
   }
+
   @media screen and (min-width: 30em) {
     padding: 3rem 0;
   }
+
   @media screen and (min-width: 62em) {
-    padding: 5rem 0;
+    padding: 2rem 0;
   }
 
   div {
     line-height: 26px;
   }
 
-  .avatar div {
-    border-radius: 50px;
-  }
 
   h1,
   h2 {
@@ -157,15 +224,19 @@ footer a {
     font-size: 2rem;
     color: var(--chakra-colors-gray-700);
     font-weight: bold;
+
     @media screen and (min-width: 22.5em) {
       font-size: 2rem;
     }
+
     @media screen and (min-width: 30em) {
       font-size: 3rem;
     }
+
     @media screen and (min-width: 48em) {
       font-size: 3rem;
     }
+
     @media screen and (min-width: 62em) {
       font-size: 4rem;
     }
@@ -174,28 +245,6 @@ footer a {
   h2 {
     color: var(--chakra-colors-gray-500);
     margin-bottom: 1rem;
-  }
-
-  .avatar {
-    width: 100px;
-    height: 100px;
-    border-radius: 50px;
-    @media screen and (min-width: 22.5em) {
-      width: 60px;
-      height: 60px;
-    }
-    @media screen and (min-width: 30em) {
-      width: 60px;
-      height: 60px;
-    }
-    @media screen and (min-width: 48em) {
-      width: 100px;
-      height: 100px;
-    }
-    img {
-      border-radius: 50px;
-      box-shadow: var(--chakra-shadows-xl);
-    }
   }
 
   .presentation {
@@ -207,15 +256,19 @@ footer a {
 
 .about-description {
   width: 75%;
+
   @media screen and (min-width: 22.5em) {
     width: 100%;
   }
+
   @media screen and (min-width: 30em) {
     width: 100%;
   }
+
   @media screen and (min-width: 48em) {
     width: 80%;
   }
+
   @media screen and (min-width: 62em) {
     width: 75%;
   }
@@ -223,9 +276,11 @@ footer a {
 
 .grid {
   margin-bottom: 3rem;
+
   @media screen and (min-width: 62em) {
     margin-bottom: 5rem;
   }
+
   h3 {
     color: var(--chakra-colors-gray-500);
     font-size: 1.5rem;
@@ -233,14 +288,17 @@ footer a {
     font-weight: bold;
     margin-right: 1rem;
     margin-bottom: 0.2rem;
+
     @media screen and (min-width: 22.5em) {
       font-size: 1.5rem;
       margin-bottom: 0.2rem;
     }
+
     @media screen and (min-width: 30em) {
       font-size: 1.5rem;
       margin-bottom: 0.2rem;
     }
+
     @media screen and (min-width: 48em) {
       font-size: 2.5rem;
       margin-bottom: 1rem;
@@ -252,14 +310,18 @@ footer a {
   display: flex;
   flex-direction: column;
   margin-bottom: 2rem;
+
   p {
     font-size: 0.8rem;
+
     @media screen and (min-width: 22.5em) {
       font-size: 0.8rem;
     }
+
     @media screen and (min-width: 30em) {
       font-size: 1rem;
     }
+
     @media screen and (min-width: 62em) {
       font-size: 1rem;
     }
@@ -275,12 +337,15 @@ footer a {
     background: #fff;
     border-radius: 15px;
     box-shadow: var(--chakra-shadows-md);
+
     a {
       width: 100%;
     }
-    .portfolio-image img{
+
+    .portfolio-image img {
       border-radius: 15px 15px 0 0;
     }
+
     .portfolio-link {
       color: var(--chakra-colors-blue-600);
       transition: opacity 0.2s ease 0s;
@@ -290,33 +355,40 @@ footer a {
     &:hover {
       box-shadow: var(--chakra-shadows-2xl);
       transform: scale(1.1);
+
       @media screen and (min-width: 22.5em) {
         transform: scale(1);
         box-shadow: none;
       }
+
       @media screen and (min-width: 30em) {
         transform: scale(1);
         box-shadow: none;
       }
+
       @media screen and (min-width: 48em) {
         transform: scale(1.1);
         box-shadow: var(--chakra-shadows-2xl);
       }
+
       .portfolio-link {
         opacity: 100%;
       }
     }
+
     h4 {
       overflow: hidden;
       text-overflow: ellipsis;
       margin-top: var(--chakra-space-1);
     }
+
     p {
       margin-top: var(--chakra-space-1);
       margin-bottom: var(--chakra-space-4);
       font-size: 0.8rem;
       font-weight: normal;
     }
+
     .article-wrap {
       padding: var(--chakra-space-6);
     }
@@ -343,12 +415,15 @@ footer a {
 }
 
 .header-actions {
-  width: 300px;
+  width: 80%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+
   @media screen and (min-width: 22.5em) {
     width: 260px;
   }
+
   @media screen and (min-width: 30em) {
     width: 300px;
   }
@@ -365,6 +440,7 @@ footer a {
   margin: 1rem 0;
   justify-content: center;
   flex-wrap: wrap;
+
   button {
     margin-right: 1rem;
     margin-bottom: 1rem;
@@ -381,68 +457,74 @@ footer a {
 
 .chakra-ui-dark {
   background-color: var(--chakra-colors-gray-800);
+
   a {
     color: var(--chakra-colors-blue-300);
   }
+
   .cover {
     background-image: url('../public/background-dark.jpeg');
   }
+
   .overlay {
-    background: linear-gradient(
-      0deg,
-      var(--chakra-colors-gray-800) 85%,
-      rgba(255, 255, 255, 0) 95%
-    );
+    background: linear-gradient(0deg,
+        var(--chakra-colors-gray-800) 85%,
+        rgba(255, 255, 255, 0) 95%);
+
     @media screen and (min-width: 22.5em) {
-      background: linear-gradient(
-        0deg,
-        var(--chakra-colors-gray-800) 99%,
-        rgba(255, 255, 255, 0) 100%
-      );
+      background: linear-gradient(0deg,
+          var(--chakra-colors-gray-800) 99%,
+          rgba(255, 255, 255, 0) 100%);
     }
+
     @media screen and (min-width: 30em) {
-      background: linear-gradient(
-        0deg,
-        var(--chakra-colors-gray-800) 98%,
-        rgba(255, 255, 255, 0) 100%
-      );
+      background: linear-gradient(0deg,
+          var(--chakra-colors-gray-800) 98%,
+          rgba(255, 255, 255, 0) 100%);
     }
+
     @media screen and (min-width: 62em) {
-      background: linear-gradient(
-        0deg,
-        var(--chakra-colors-gray-800) 93%,
-        rgba(255, 255, 255, 0) 98%
-      );
+      background: linear-gradient(0deg,
+          var(--chakra-colors-gray-800) 93%,
+          rgba(255, 255, 255, 0) 98%);
     }
+
     @media screen and (min-width: 80em) {
-      background: linear-gradient(
-        0deg,
-        var(--chakra-colors-gray-800) 90%,
-        rgba(255, 255, 255, 0) 95%
-      );
+      background: linear-gradient(0deg,
+          var(--chakra-colors-gray-800) 90%,
+          rgba(255, 255, 255, 0) 95%);
     }
   }
+
   .about h1 {
     color: var(--chakra-colors-gray-100);
   }
+
   .presentation {
     color: var(--chakra-colors-gray-300);
   }
-  .about h2, .grid h3 {
+
+  .about h2,
+  .grid h3 {
     color: var(--chakra-colors-gray-400);
   }
+
   .grid-header p {
     color: var(--chakra-colors-gray-100);
   }
+
   .portfolios article {
     background-color: var(--chakra-colors-gray-700);
+
     a {
       color: var(--chakra-colors-gray-100);
     }
+
     .portfolio-link {
       color: var(--chakra-colors-blue-300);
     }
   }
+
   .header-actions svg {
     color: var(--chakra-colors-gray-300);
   }
@@ -451,6 +533,20 @@ footer a {
 
 .container-flex {
   padding: 0 1rem;
+
+  @media screen and (min-width: 22.5em) {
+    padding-top: 60px;
+
+  }
+
+  @media screen and (min-width: 30em) {
+    padding-top: 60px;
+
+  }
+
+  @media screen and (min-width: 48em) {
+    padding: 0 1rem;
+  }
 }
 
 .chakra-accordion {

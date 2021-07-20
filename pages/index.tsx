@@ -8,6 +8,8 @@ import {Flex, Link, SimpleGrid} from "@chakra-ui/react";
 const Home = () => (
   <div className="cover">
     <div className="overlay">
+      <Topbar></Topbar>
+
       <Flex
         className="container-flex"
         direction="column"
@@ -17,7 +19,6 @@ const Home = () => (
       >
         <main>
           <section className="about">
-            <Topbar></Topbar>
             <p className="presentation">👋 Hi, my name is</p>
             <h1>Cândido Sales.</h1>
             <h2>
