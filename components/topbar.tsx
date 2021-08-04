@@ -114,8 +114,9 @@ const Topbar = (): any => {
                 </h2>
                 <AccordionPanel pb={4}>
                   I have experience in various markets such as e-commerce,
-                  finance, marketing, call center, security and with that I can
-                  share some of my knowledge and help your project or idea.
+                  finance, marketing, telecommunication, security and with that
+                  I can share some of my knowledge and help your project or
+                  idea.
                 </AccordionPanel>
               </AccordionItem>
               <AccordionItem>
