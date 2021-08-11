@@ -16,6 +16,7 @@ Landing page for your personal portfolio made with [NextJS](https://nextjs.org/)
 - [next/image](https://nextjs.org/docs/basic-features/image-optimization)
 - [PWA](https://web.dev/progressive-web-apps/);
 - Optmize images before to send it. [ImageOptim](https://github.com/JamieMason/ImageOptim-CLI);
+- [Chakra UI](https://chakra-ui.com/);
 
 ## ⚙️ How to setup
 
