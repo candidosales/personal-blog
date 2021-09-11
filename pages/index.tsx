@@ -70,7 +70,7 @@ const Home = (): ReactElement => {
                     title={p.title}
                     description={p.description}
                     url={p.url}
-                    techs={p.techs}
+                    techs={p.techs as [{icon: string; name: string}]}
                   />
                 ))}
               </SimpleGrid>
@@ -96,7 +96,7 @@ const Home = (): ReactElement => {
                     title={p.title}
                     description={p.description}
                     url={p.url}
-                    techs={p.techs}
+                    techs={p.techs as [{icon: string; name: string}]}
                   />
                 ))}
               </SimpleGrid>
@@ -123,7 +123,7 @@ const Home = (): ReactElement => {
                     title={p.title}
                     description={p.description}
                     url={p.url}
-                    techs={p.techs}
+                    techs={p.techs as [{icon: string; name: string}]}
                   />
                 ))}
               </SimpleGrid>
@@ -146,7 +146,7 @@ const Home = (): ReactElement => {
                     title={p.title}
                     description={p.description}
                     url={p.url}
-                    techs={[]}
+                    techs={[{}] as [{icon: string; name: string}]}
                   />
                 ))}
               </SimpleGrid>
