@@ -1,4 +1,4 @@
-import React from "react";
+import React, {ReactElement} from "react";
 import {
   Button,
   IconButton,
@@ -28,7 +28,7 @@ import {
 } from "react-icons/ri";
 import Image from "next/image";
 
-const Topbar = (): any => {
+const Topbar = (): ReactElement => {
   const {isOpen, onOpen, onClose} = useDisclosure();
 
   return (
