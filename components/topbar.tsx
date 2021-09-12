@@ -5,13 +5,16 @@ import {
   Link,
   Tooltip,
   useDisclosure,
+  Select,
 } from "@chakra-ui/react";
 import {RiLinkedinBoxFill, RiGithubFill, RiMediumFill} from "react-icons/ri";
 import Image from "next/image";
 import ModalContact from "./modal-contact";
+import {chooseTranslate} from "../utils/translate";
 
-const Topbar = (): ReactElement => {
+const Topbar = ({changeLanguage, locale}): ReactElement => {
   const {isOpen, onOpen, onClose} = useDisclosure();
+  const t = chooseTranslate(locale);
 
   return (
     <header className="header">
@@ -26,9 +29,18 @@ const Topbar = (): ReactElement => {
         />
       </div>
       <div className="header-actions">
-        <Button colorScheme="whatsapp" size="sm" onClick={onOpen}>
+        <Button colorScheme="whatsapp" size="sm" mr="2" onClick={onOpen}>
           get in touch
         </Button>
+        <Select
+          variant="filled"
+          size="sm"
+          defaultValue={locale}
+          onChange={changeLanguage}
+        >
+          <option value="en-US">🇺🇸</option>
+          <option value="pt-BR">🇧🇷</option>
+        </Select>
         <Tooltip hasArrow label="" placement="auto">
           <Link href="https://www.linkedin.com/in/candidosales/" isExternal>
             <IconButton

@@ -4,7 +4,7 @@ const isProd = process.env.NODE_ENV === "production";
 
 module.exports = withPWA({
   i18n: {
-    locales: ["en-US", "pt-BR", "es"],
+    locales: ["en-US", "pt-BR", "en"],
     defaultLocale: "en-US",
     localeDetection: false,
   },

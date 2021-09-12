@@ -75,6 +75,37 @@ a {
   }
 }
 
+.presentation-hand {
+  display: inline-block;
+  width: 19px;
+  height: 23px;
+  margin-right: 8px;
+
+
+}
+
+@keyframes hand-shake {
+  0% {
+    transform: rotate(-5deg);
+  }
+
+  25% {
+    transform: rotate(15deg);
+  }
+
+  50% {
+    transform: rotate(-10deg);
+  }
+
+  75% {
+    transform: rotate(15deg);
+  }
+
+  100% {
+    transform: rotate(-5deg);
+  }
+}
+
 main {
   flex: 1;
   display: flex;
@@ -286,6 +317,12 @@ footer a {
     margin-bottom: 1rem;
     font-size: 1.2rem;
   }
+
+  &:hover {
+    .presentation-hand {
+      animation: hand-shake 2s infinite;
+    }
+  }
 }
 
 .about-description {
@@ -466,6 +503,15 @@ footer a {
     width: 35px;
     height: 35px;
     color: var(--chakra-colors-gray-600);
+  }
+
+  .chakra-select {
+    cursor: pointer;
+  }
+
+  .chakra-select__wrapper {
+    width: 70px;
+    display: inline-block;
   }
 }
 

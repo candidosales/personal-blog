@@ -7,6 +7,7 @@ import ModalContact from "../components/modal-contact";
 import {chooseTranslate} from "../utils/translate";
 import {Flex, Link, SimpleGrid, Box, useDisclosure} from "@chakra-ui/react";
 import {useRouter} from "next/router";
+import {useEffect} from "react";
 
 const Home = (): ReactElement => {
   const {isOpen, onOpen, onClose} = useDisclosure();
@@ -14,10 +15,15 @@ const Home = (): ReactElement => {
   const router = useRouter();
   const {locale} = router;
   const t = chooseTranslate(locale);
+
+  const changeLanguage = (e) => {
+    router.push(router.pathname, router.asPath, {locale: e.target.value});
+  };
+
   return (
     <div className="cover">
       <div className="overlay">
-        <Topbar></Topbar>
+        <Topbar changeLanguage={changeLanguage} locale={locale}></Topbar>
 
         <Flex
           className="container-flex"
@@ -28,7 +34,10 @@ const Home = (): ReactElement => {
         >
           <main>
             <section className="about">
-              <p className="presentation">👋 {t.about.hiMyNameIs}</p>
+              <p className="presentation">
+                <span className="presentation-hand">👋</span>{" "}
+                {t.about.hiMyNameIs}
+              </p>
               <h1>{t.about.name}</h1>
               <h2>
                 {t.about.buildThings} <br />
