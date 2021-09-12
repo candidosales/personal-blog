@@ -4,18 +4,16 @@ import Topbar from "../components/topbar";
 import {ArrowForwardIcon, ExternalLinkIcon} from "@chakra-ui/icons";
 import {extras, portfolio, volunteer, posts} from "../data/portfolios";
 import ModalContact from "../components/modal-contact";
-import {
-  Flex,
-  Link,
-  SimpleGrid,
-  Text,
-  Box,
-  useDisclosure,
-} from "@chakra-ui/react";
+import {chooseTranslate} from "../utils/translate";
+import {Flex, Link, SimpleGrid, Box, useDisclosure} from "@chakra-ui/react";
+import {useRouter} from "next/router";
 
 const Home = (): ReactElement => {
   const {isOpen, onOpen, onClose} = useDisclosure();
 
+  const router = useRouter();
+  const {locale} = router;
+  const t = chooseTranslate(locale);
   return (
     <div className="cover">
       <div className="overlay">
@@ -30,11 +28,11 @@ const Home = (): ReactElement => {
         >
           <main>
             <section className="about">
-              <p className="presentation">👋 Hi, my name is</p>
-              <h1>Cândido Sales.</h1>
+              <p className="presentation">👋 {t.about.hiMyNameIs}</p>
+              <h1>{t.about.name}</h1>
               <h2>
-                I build things for <br />
-                the web and mobile.
+                {t.about.buildThings} <br />
+                {t.about.webAndMobile}
               </h2>
               <p className="about-description">
                 I'm Brazilian 🇧🇷 and a{" "}
@@ -155,16 +153,16 @@ const Home = (): ReactElement => {
 
           <footer>
             <h1 className="footer-text" onClick={onOpen}>
-              Let's work together
+              {t.footer.letsWorkTogether}
               <ArrowForwardIcon />
             </h1>
             <Box justifyContent="space-between" display="flex">
               <p>
-                made by
+                {t.footer.madeBy}
                 <Link color="blue.500" href="https://nextjs.org/" isExternal>
                   nextjs
                 </Link>
-                and
+                {t.and}
                 <Link color="blue.500" href="https://vercel.com/" isExternal>
                   vercel
                 </Link>
