@@ -197,8 +197,6 @@ h2,
       z-index: 1;
       right: -20px;
       top: 3px;
-      background: var(--chakra-colors-gray-700);
-      border-radius: 50px;
       cursor: pointer;
 
       @media screen and (min-width: 22.5em) {
@@ -218,6 +216,7 @@ h2,
       .select-language {
         padding: 0px 8px;
         cursor: pointer;
+        border-radius: 50px;
       }
 
       &:after {
@@ -230,7 +229,7 @@ h2,
         -webkit-transform: rotateZ(25deg);
         transform: rotateZ(25deg);
         border: 7px solid;
-        border-color: transparent transparent transparent var(--chakra-colors-gray-700);
+        border-color: transparent transparent transparent var(--chakra-colors-gray-200);
         display: none;
 
         @media screen and (min-width: 22.5em) {
@@ -598,6 +597,14 @@ footer a {
 
   a {
     color: var(--chakra-colors-blue-300);
+  }
+
+  .avatar .chakra-select__wrapper {
+    background: var(--chakra-colors-gray-700);
+
+    &:after {
+      border-color: transparent transparent transparent var(--chakra-colors-gray-700);
+    }
   }
 
   .cover {
