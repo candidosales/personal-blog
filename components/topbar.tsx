@@ -5,13 +5,16 @@ import {
   Link,
   Tooltip,
   useDisclosure,
+  Select,
 } from "@chakra-ui/react";
 import {RiLinkedinBoxFill, RiGithubFill, RiMediumFill} from "react-icons/ri";
 import Image from "next/image";
 import ModalContact from "./modal-contact";
+import {chooseTranslate} from "../utils/translate";
 
-const Topbar = (): ReactElement => {
+const Topbar = ({changeLanguage, locale}): ReactElement => {
   const {isOpen, onOpen, onClose} = useDisclosure();
+  const t = chooseTranslate(locale);
 
   return (
     <header className="header">
@@ -24,10 +27,26 @@ const Topbar = (): ReactElement => {
           title="Profile image"
           loading="lazy"
         />
+        <Select
+          className="select-language"
+          variant="filled"
+          size="sm"
+          defaultValue={locale}
+          onChange={changeLanguage}
+        >
+          <option value="en-US">🇺🇸</option>
+          <option value="pt-BR">🇧🇷</option>
+        </Select>
       </div>
       <div className="header-actions">
-        <Button colorScheme="whatsapp" size="sm" onClick={onOpen}>
-          get in touch
+        <Button
+          className="header-actions__get-in-touch"
+          colorScheme="whatsapp"
+          size="sm"
+          mr="2"
+          onClick={onOpen}
+        >
+          {t.getInTouch}
         </Button>
         <Tooltip hasArrow label="" placement="auto">
           <Link href="https://www.linkedin.com/in/candidosales/" isExternal>
@@ -60,7 +79,7 @@ const Topbar = (): ReactElement => {
           </Link>
         </Tooltip>
       </div>
-      <ModalContact isOpen={isOpen} onClose={onClose} />
+      <ModalContact isOpen={isOpen} onClose={onClose} locale={locale} />
     </header>
   );
 };

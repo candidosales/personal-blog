@@ -1,25 +1,28 @@
-import React, {ReactElement} from "react";
+import ModalContact from "../components/modal-contact";
 import Portfolio from "../components/portfolio";
+import React, {ReactElement} from "react";
 import Topbar from "../components/topbar";
 import {ArrowForwardIcon, ExternalLinkIcon} from "@chakra-ui/icons";
-import {extras, portfolio, volunteer, posts} from "../data/portfolios";
-import ModalContact from "../components/modal-contact";
-import {
-  Flex,
-  Link,
-  SimpleGrid,
-  Text,
-  Box,
-  useDisclosure,
-} from "@chakra-ui/react";
+import {Box, Flex, Link, SimpleGrid, useDisclosure} from "@chakra-ui/react";
+import {chooseTranslate} from "../utils/translate";
+import {extras, portfolio, posts, volunteer} from "../data/portfolios";
+import {useRouter} from "next/router";
 
 const Home = (): ReactElement => {
   const {isOpen, onOpen, onClose} = useDisclosure();
 
+  const router = useRouter();
+  const {locale} = router;
+  const t = chooseTranslate(locale);
+
+  const changeLanguage = (e) => {
+    router.push(router.pathname, router.asPath, {locale: e.target.value});
+  };
+
   return (
     <div className="cover">
       <div className="overlay">
-        <Topbar></Topbar>
+        <Topbar changeLanguage={changeLanguage} locale={locale}></Topbar>
 
         <Flex
           className="container-flex"
@@ -30,32 +33,28 @@ const Home = (): ReactElement => {
         >
           <main>
             <section className="about">
-              <p className="presentation">👋 Hi, my name is</p>
-              <h1>Cândido Sales.</h1>
+              <p className="presentation">
+                <span className="presentation-hand">👋</span>{" "}
+                {t.about.hiMyNameIs}
+              </p>
+              <h1>{t.about.name}</h1>
               <h2>
-                I build things for <br />
-                the web and mobile.
+                {t.about.buildThings} <br />
+                {t.about.webAndMobile}
               </h2>
               <p className="about-description">
-                I'm Brazilian 🇧🇷 and a{" "}
-                <Link href="https://en.wikipedia.org/wiki/Saskatoon" isExternal>
-                  Saskatoon-based 🇨🇦
-                  <ExternalLinkIcon mx="2px" />
-                </Link>{" "}
-                software engineer who specializes in building (and occasionally
-                designing) exceptional digital experiences. Currently, I'm a
-                software engineer at{" "}
+                {t.about.imBrazilian}{" "}
                 <Link href="https://www.vendasta.com/" isExternal>
-                  Vendasta
+                  {t.about.vendasta}
                   <ExternalLinkIcon mx="2px" />
                 </Link>{" "}
-                focused on building accessible, human-centered products.
+                {t.about.focusedOnBuilding}
               </p>
             </section>
             <section className="grid">
               <div className="grid-header">
-                <h3>🧳 Portfolio</h3>
-                <p>Some open source projects that I've built and maintain</p>
+                <h3>🧳 {t.portfolio.title}</h3>
+                <p>{t.portfolio.description}</p>
               </div>
               <SimpleGrid
                 className="portfolios"
@@ -77,11 +76,8 @@ const Home = (): ReactElement => {
             </section>
             <section className="grid">
               <div className="grid-header">
-                <h3>✨ Extras</h3>
-                <p>
-                  Other projects that I develop in my spare time to practice new
-                  resources and technologies
-                </p>
+                <h3>✨ {t.extras.title}</h3>
+                <p>{t.extras.description}</p>
               </div>
               <SimpleGrid
                 className="portfolios"
@@ -103,12 +99,8 @@ const Home = (): ReactElement => {
             </section>
             <section className="grid">
               <div className="grid-header">
-                <h3>🤝 Volunteer</h3>
-                <p>
-                  Some projects that I develop and help to maintain voluntarily
-                  that it is in accordance with principles that I believe such
-                  as education, culture, art, public health and sustainability
-                </p>
+                <h3>🤝 {t.volunteer.title}</h3>
+                <p>{t.volunteer.description}</p>
               </div>
               <SimpleGrid
                 className="portfolios"
@@ -130,8 +122,8 @@ const Home = (): ReactElement => {
             </section>
             <section className="grid">
               <div className="grid-header">
-                <h3>📰 Blog</h3>
-                <p>Some posts ...</p>
+                <h3>📰 {t.blog.title}</h3>
+                <p>{t.blog.description}</p>
               </div>
               <SimpleGrid
                 className="portfolios blog"
@@ -155,16 +147,16 @@ const Home = (): ReactElement => {
 
           <footer>
             <h1 className="footer-text" onClick={onOpen}>
-              Let's work together
+              {t.footer.letsWorkTogether}
               <ArrowForwardIcon />
             </h1>
             <Box justifyContent="space-between" display="flex">
               <p>
-                made by
+                {t.footer.madeBy}
                 <Link color="blue.500" href="https://nextjs.org/" isExternal>
                   nextjs
                 </Link>
-                and
+                {t.and}
                 <Link color="blue.500" href="https://vercel.com/" isExternal>
                   vercel
                 </Link>
@@ -179,7 +171,7 @@ const Home = (): ReactElement => {
                 </Link>
               </p>
             </Box>
-            <ModalContact isOpen={isOpen} onClose={onClose} />
+            <ModalContact isOpen={isOpen} onClose={onClose} locale={locale} />
           </footer>
         </Flex>
       </div>

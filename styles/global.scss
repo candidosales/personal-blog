@@ -75,6 +75,37 @@ a {
   }
 }
 
+.presentation-hand {
+  display: inline-block;
+  width: 19px;
+  height: 23px;
+  margin-right: 8px;
+
+
+}
+
+@keyframes hand-shake {
+  0% {
+    transform: rotate(-5deg);
+  }
+
+  25% {
+    transform: rotate(15deg);
+  }
+
+  50% {
+    transform: rotate(-10deg);
+  }
+
+  75% {
+    transform: rotate(15deg);
+  }
+
+  100% {
+    transform: rotate(-5deg);
+  }
+}
+
 main {
   flex: 1;
   display: flex;
@@ -157,6 +188,58 @@ h2,
     padding-right: 8px;
     align-items: center;
     display: flex;
+    position: relative;
+
+    .chakra-select__wrapper {
+      position: absolute;
+      width: 37px;
+      z-index: 1;
+      right: -20px;
+      top: 3px;
+      cursor: pointer;
+
+      @media screen and (min-width: 22.5em) {
+        right: -20px;
+        top: 3px;
+      }
+
+      @media screen and (min-width: 30em) {
+        right: -8px;
+        top: 0px;
+      }
+
+      .chakra-select__icon-wrapper {
+        display: none;
+      }
+
+      .select-language {
+        padding: 0px 8px;
+        cursor: pointer;
+        border-radius: 50px;
+      }
+
+      &:after {
+        content: ' ';
+        position: absolute;
+        width: 0;
+        height: 0;
+        left: -1px;
+        top: 22px;
+        -webkit-transform: rotateZ(25deg);
+        transform: rotateZ(25deg);
+        border: 7px solid;
+        border-color: transparent transparent transparent var(--chakra-colors-gray-200);
+        display: none;
+
+        @media screen and (min-width: 22.5em) {
+          display: none;
+        }
+
+        @media screen and (min-width: 30em) {
+          display: block;
+        }
+      }
+    }
 
     @media screen and (min-width: 22.5em) {
       width: 40px;
@@ -285,6 +368,12 @@ footer a {
     color: var(--chakra-colors-gray-600);
     margin-bottom: 1rem;
     font-size: 1.2rem;
+  }
+
+  &:hover {
+    .presentation-hand {
+      animation: hand-shake 2s infinite;
+    }
   }
 }
 
@@ -467,6 +556,19 @@ footer a {
     height: 35px;
     color: var(--chakra-colors-gray-600);
   }
+
+  .chakra-select {
+    cursor: pointer;
+  }
+
+  .chakra-select__wrapper {
+    width: 70px;
+    display: inline-block;
+  }
+
+  .header-actions__get-in-touch {
+    text-transform: lowercase;
+  }
 }
 
 .modal-contact {
@@ -494,6 +596,14 @@ footer a {
 
   a {
     color: var(--chakra-colors-blue-300);
+  }
+
+  .avatar .chakra-select__wrapper {
+    background: var(--chakra-colors-gray-700);
+
+    &:after {
+      border-color: transparent transparent transparent var(--chakra-colors-gray-700);
+    }
   }
 
   .cover {
