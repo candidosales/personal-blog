@@ -2,8 +2,9 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  // font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  //   Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: Helvetica Neue, sans-serif;
 }
 
 * {
@@ -188,6 +189,59 @@ h2,
     padding-right: 8px;
     align-items: center;
     display: flex;
+    position: relative;
+
+    .chakra-select__wrapper {
+      position: absolute;
+      width: 37px;
+      z-index: 1;
+      right: -20px;
+      top: 3px;
+      background: var(--chakra-colors-gray-700);
+      border-radius: 50px;
+      cursor: pointer;
+
+      @media screen and (min-width: 22.5em) {
+        right: -20px;
+        top: 3px;
+      }
+
+      @media screen and (min-width: 30em) {
+        right: -8px;
+        top: 0px;
+      }
+
+      .chakra-select__icon-wrapper {
+        display: none;
+      }
+
+      .select-language {
+        padding: 0px 8px;
+        cursor: pointer;
+      }
+
+      &:after {
+        content: ' ';
+        position: absolute;
+        width: 0;
+        height: 0;
+        left: -1px;
+        top: 22px;
+        -webkit-transform: rotateZ(25deg);
+        transform: rotateZ(25deg);
+        border: 7px solid;
+        border-color: transparent transparent transparent var(--chakra-colors-gray-700);
+        display: none;
+
+        @media screen and (min-width: 22.5em) {
+          display: none;
+        }
+
+        @media screen and (min-width: 30em) {
+          display: block;
+        }
+      }
+    }
 
     @media screen and (min-width: 22.5em) {
       width: 40px;
@@ -512,6 +566,10 @@ footer a {
   .chakra-select__wrapper {
     width: 70px;
     display: inline-block;
+  }
+
+  .header-actions__get-in-touch {
+    text-transform: lowercase;
   }
 }
 

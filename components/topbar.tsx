@@ -27,12 +27,8 @@ const Topbar = ({changeLanguage, locale}): ReactElement => {
           title="Profile image"
           loading="lazy"
         />
-      </div>
-      <div className="header-actions">
-        <Button colorScheme="whatsapp" size="sm" mr="2" onClick={onOpen}>
-          get in touch
-        </Button>
         <Select
+          className="select-language"
           variant="filled"
           size="sm"
           defaultValue={locale}
@@ -41,6 +37,26 @@ const Topbar = ({changeLanguage, locale}): ReactElement => {
           <option value="en-US">🇺🇸</option>
           <option value="pt-BR">🇧🇷</option>
         </Select>
+      </div>
+      <div className="header-actions">
+        <Button
+          className="header-actions__get-in-touch"
+          colorScheme="whatsapp"
+          size="sm"
+          mr="2"
+          onClick={onOpen}
+        >
+          {t.getInTouch}
+        </Button>
+        {/* <Select
+          variant="filled"
+          size="sm"
+          defaultValue={locale}
+          onChange={changeLanguage}
+        >
+          <option value="en-US">🇺🇸</option>
+          <option value="pt-BR">🇧🇷</option>
+        </Select> */}
         <Tooltip hasArrow label="" placement="auto">
           <Link href="https://www.linkedin.com/in/candidosales/" isExternal>
             <IconButton
@@ -72,7 +88,7 @@ const Topbar = ({changeLanguage, locale}): ReactElement => {
           </Link>
         </Tooltip>
       </div>
-      <ModalContact isOpen={isOpen} onClose={onClose} />
+      <ModalContact isOpen={isOpen} onClose={onClose} locale={locale} />
     </header>
   );
 };

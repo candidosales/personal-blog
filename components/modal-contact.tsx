@@ -2,16 +2,13 @@ import React, {ReactElement} from "react";
 
 import {
   Button,
-  IconButton,
   Link,
-  Tooltip,
   Modal,
   ModalBody,
   ModalCloseButton,
   ModalContent,
   ModalHeader,
   ModalOverlay,
-  useDisclosure,
   Stack,
   Accordion,
   AccordionItem,
@@ -20,37 +17,32 @@ import {
   AccordionIcon,
   Box,
 } from "@chakra-ui/react";
-import {
-  RiLinkedinBoxFill,
-  RiGithubFill,
-  RiMediumFill,
-  RiMailFill,
-  RiWhatsappFill,
-} from "react-icons/ri";
-const ModalContact = ({isOpen, onClose}): ReactElement => {
+import {RiMailFill, RiWhatsappFill} from "react-icons/ri";
+import {chooseTranslate} from "../utils/translate";
+const ModalContact = ({isOpen, onClose, locale}): ReactElement => {
+  const t = chooseTranslate(locale);
   return (
     <Modal isOpen={isOpen} onClose={onClose}>
       <ModalOverlay />
       <ModalContent>
-        <ModalHeader>Get in touch 😃</ModalHeader>
+        <ModalHeader>{t.getInTouch} 😃</ModalHeader>
         <ModalCloseButton />
         <ModalBody>
           <p>
-            It will be a pleasure to talk to you about: <br />
+            {t.contact.itWillBe} <br />
           </p>
           <Accordion allowMultiple>
             <AccordionItem>
               <h2>
                 <AccordionButton>
                   <Box flex="1" textAlign="left">
-                    💡 New project
+                    {t.contact.newProject.title}
                   </Box>
                   <AccordionIcon />
                 </AccordionButton>
               </h2>
               <AccordionPanel pb={4}>
-                I'm always interested in knowing your ideas, analyzing
-                feasibility and we can even build together 😊.
+                {t.contact.newProject.description}
               </AccordionPanel>
             </AccordionItem>
 
@@ -58,34 +50,30 @@ const ModalContact = ({isOpen, onClose}): ReactElement => {
               <h2>
                 <AccordionButton>
                   <Box flex="1" textAlign="left">
-                    📚 Consultancy
+                    {t.contact.consultancy.title}
                   </Box>
                   <AccordionIcon />
                 </AccordionButton>
               </h2>
               <AccordionPanel pb={4}>
-                I have experience in various markets such as e-commerce,
-                finance, marketing, telecommunication, security and with that I
-                can share some of my knowledge and help your project or idea.
+                {t.contact.consultancy.description}
               </AccordionPanel>
             </AccordionItem>
             <AccordionItem>
               <h2>
                 <AccordionButton>
                   <Box flex="1" textAlign="left">
-                    👨🏻‍🏫 Mentoring
+                    {t.contact.mentoring.title}
                   </Box>
                   <AccordionIcon />
                 </AccordionButton>
               </h2>
               <AccordionPanel pb={4}>
-                I would like to hear your story and present the possibilities
-                that computing and the technology market can offer your career
-                😃.
+                {t.contact.mentoring.description}
               </AccordionPanel>
             </AccordionItem>
           </Accordion>
-          <p>👋 Feel free to speak with me by</p>
+          <p>{t.contact.feelFreeToSpeak}</p>
           <Stack direction="row" spacing={4} className="modal-contact">
             <Link
               href="mailto:candidosg@gmail.com"
