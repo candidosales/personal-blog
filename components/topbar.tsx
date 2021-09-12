@@ -48,15 +48,6 @@ const Topbar = ({changeLanguage, locale}): ReactElement => {
         >
           {t.getInTouch}
         </Button>
-        {/* <Select
-          variant="filled"
-          size="sm"
-          defaultValue={locale}
-          onChange={changeLanguage}
-        >
-          <option value="en-US">🇺🇸</option>
-          <option value="pt-BR">🇧🇷</option>
-        </Select> */}
         <Tooltip hasArrow label="" placement="auto">
           <Link href="https://www.linkedin.com/in/candidosales/" isExternal>
             <IconButton
