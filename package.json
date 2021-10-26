@@ -1,6 +1,6 @@
 {
   "name": "personal-blog",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "private": false,
   "author": "Candido Sales Gomes <candidosg@gmail.com>",
   "license": "MIT",
@@ -36,14 +36,14 @@
   },
   "dependencies": {
     "@chakra-ui/icons": "^1.0.15",
-    "@chakra-ui/react": "^1.6.7",
+    "@chakra-ui/react": "^1.6.10",
     "@emotion/react": "^11.4.1",
     "@emotion/styled": "^11.3.0",
     "framer-motion": "^4.1.17",
-    "next": "^11.1.2",
+    "next": "^12.0.0",
     "next-pwa": "^5.3.1",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
+    "react": "^18.0.0-alpha-4298ddbc5-20211023",
+    "react-dom": "^18.0.0-alpha-4298ddbc5-20211023",
     "react-icons": "^4.2.0",
     "sass": "^1.39.2"
   },

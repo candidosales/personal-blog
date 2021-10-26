@@ -8,8 +8,14 @@ Landing page for your personal portfolio made with [NextJS](https://nextjs.org/)
 
 - [Candido Sales Gomes Portfolio](https://www.candidosales.me/)
 
+## Requirements
+
+- The minimum Node.js version 12.22.0, which is the first version of Node.js with native ES modules support.
+
 ## 🎯 Features
 
+- [NextJS 12](https://nextjs.org/blog/next-12);
+- [React 18 Alpha](https://nextjs.org/blog/next-12#preparing-for-react-18);
 - Dark mode;
 - Integrate with Google Analytics;
 - i18n (Internationalization);

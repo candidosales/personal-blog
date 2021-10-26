@@ -3,6 +3,11 @@ const withPWA = require("next-pwa");
 const isProd = process.env.NODE_ENV === "production";
 
 module.exports = withPWA({
+  swcMinify: true,
+  experimental: {
+    esmExternals: false,
+    concurrentFeatures: true,
+  },
   i18n: {
     locales: ["en-US", "pt-BR", "en"],
     defaultLocale: "en-US",
