@@ -41,24 +41,24 @@
     "@emotion/styled": "^11.3.0",
     "framer-motion": "^4.1.17",
     "next": "^12.0.0",
-    "next-pwa": "^5.3.1",
+    "next-pwa": "^5.4.0",
     "react": "^18.0.0-alpha-4298ddbc5-20211023",
     "react-dom": "^18.0.0-alpha-4298ddbc5-20211023",
-    "react-icons": "^4.2.0",
-    "sass": "^1.39.2"
+    "react-icons": "^4.3.1",
+    "sass": "^1.43.4"
   },
   "devDependencies": {
     "@types/gtag.js": "0.0.7",
-    "@types/node": "^16.9.1",
+    "@types/node": "^16.11.6",
     "@types/react": "^17.0.20",
     "@typescript-eslint/eslint-plugin": "^4.31.0",
     "@typescript-eslint/parser": "^4.31.0",
     "eslint": "^7.32.0",
     "eslint-config-next": "^11.1.2",
     "eslint-plugin-react": "^7.25.1",
-    "husky": "^7.0.2",
-    "lint-staged": "^11.1.2",
-    "prettier": "^2.4.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^11.2.6",
+    "prettier": "^2.4.1",
     "typescript": "^4.4.3"
   }
 }
