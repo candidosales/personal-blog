@@ -6,7 +6,7 @@ module.exports = withPWA({
   swcMinify: true,
   experimental: {
     esmExternals: false,
-    concurrentFeatures: true,
+    concurrentFeatures: false,
   },
   i18n: {
     locales: ["en-US", "pt-BR", "en"],
