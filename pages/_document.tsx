@@ -31,7 +31,10 @@ class MyDocument extends Document {
           />
           <meta property="og:locale" content="en" />
           <meta property="og:type" content="website" />
-          <meta property="og:title" content="Candido Sales Gomes Portfolio" />
+          <meta
+            property="og:title"
+            content="Candido Sales Gomes - Developer, creator"
+          />
           <meta property="og:site_name" content="Candido Sales Gomes" />
           <meta
             property="og:description"

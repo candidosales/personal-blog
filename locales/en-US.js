@@ -8,7 +8,7 @@ export default {
     webAndMobile: "the web and mobile.",
     imBrazilian:
       "I'm Brazilian 🇧🇷 and a Saskatoon-based 🇨🇦  software engineer who specializes in building (and occasionally designing) exceptional digital experiences. Currently, I work at",
-    vendasta: "Vendasta",
+    company: "Cisco",
     focusedOnBuilding:
       "focused on building accessible, human-centered products.",
   },

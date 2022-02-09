@@ -44,8 +44,11 @@ const Home = (): ReactElement => {
               </h2>
               <p className="about-description">
                 {t.about.imBrazilian}{" "}
-                <Link href="https://www.vendasta.com/" isExternal>
-                  {t.about.vendasta}
+                <Link
+                  href="https://www.cisco.com/c/en_ca/index.html/"
+                  isExternal
+                >
+                  {t.about.company}
                   <ExternalLinkIcon mx="2px" />
                 </Link>{" "}
                 {t.about.focusedOnBuilding}
