@@ -64,8 +64,12 @@ class MyDocument extends Document {
             href="https://fonts.gstatic.com"
             crossorigin
           ></link>
-          <link
+          {/* <link
             href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+            rel="stylesheet"
+          ></link> */}
+          <link
+            href="https://fonts.googleapis.com/css2?family=Questrial&display=swap"
             rel="stylesheet"
           ></link>
           {/* Global Site Tag (gtag.js) - Google Analytics */}
