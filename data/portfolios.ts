@@ -162,40 +162,6 @@ export const portfolio = [
 
 export const extras = [
   {
-    imageUrl: "/were-not-really-strangers.png",
-    imageAlt: "We're Not Really Strangers",
-    title: "We're Not Really Strangers",
-    description:
-      "I ❤️ this game and wanted to create a possibility to play with my friends online and get to know each other even from a distance. (COVID tough times 😞)",
-    url: "https://wnrs.app/",
-    techs: [
-      {
-        icon: "nextjs",
-        name: "NextJS",
-      },
-      {
-        icon: "react",
-        name: "React",
-      },
-      {
-        icon: "chakra-ui",
-        name: "Chakra UI",
-      },
-      {
-        icon: "sass",
-        name: "SASS",
-      },
-      {
-        icon: "vercel",
-        name: "Vercel",
-      },
-      {
-        icon: "pwa",
-        name: "PWA",
-      },
-    ],
-  },
-  {
     imageUrl: "/my-agenda-cultural.gif",
     imageAlt: "Virada Cultural",
     title: "My Cultural Agenda",
