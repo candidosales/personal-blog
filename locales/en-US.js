@@ -7,10 +7,10 @@ export default {
     buildThings: "I build things for",
     webAndMobile: "the web and mobile.",
     imBrazilian:
-      "I'm Brazilian 🇧🇷 and a Saskatoon-based 🇨🇦  software engineer who specializes in building (and occasionally designing) exceptional digital experiences. Currently, I work at",
+      "I'm Brazilian 🇧🇷 from Piauí and a Saskatoon-based 🇨🇦  software engineer who specializes in building (and occasionally designing) exceptional digital experiences. Currently, I work at",
     company: "Cisco",
     focusedOnBuilding:
-      "focused on building accessible, human-centered products.",
+      "focused on building accessible, human-centred products.",
   },
   portfolio: {
     title: "Portfolio",
