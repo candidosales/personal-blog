@@ -7,7 +7,7 @@ export default {
     buildThings: "Eu construo coisas para",
     webAndMobile: "a web e mobile.",
     imBrazilian:
-      "Sou brasileiro 🇧🇷 do Piauí e engenheiro de software baseado em Saskatoon 🇨🇦  especializado em criar (e ocasionalmente projetar) experiências digitais excepcionais. Atualmente, trabalho na",
+      "Sou brasileiro 🇧🇷 do Piauí e engenheiro de software baseado em Kitchener 🇨🇦  especializado em criar (e ocasionalmente projetar) experiências digitais excepcionais. Atualmente, trabalho na",
     company: "Cisco",
     focusedOnBuilding:
       "focada na construção de produtos acessíveis e centrados no ser humano.",
