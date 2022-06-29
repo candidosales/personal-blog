@@ -5,8 +5,9 @@ const isProd = process.env.NODE_ENV === "production";
 module.exports = withPWA({
   swcMinify: true,
   experimental: {
-    esmExternals: false,
-    concurrentFeatures: false,
+    images: {
+      allowFutureImage: true,
+    },
   },
   i18n: {
     locales: ["en-US", "pt-BR", "en"],

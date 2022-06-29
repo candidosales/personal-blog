@@ -141,7 +141,6 @@ const Home = (): ReactElement => {
                     title={p.title}
                     description={p.description}
                     url={p.url}
-                    techs={[{}] as [{icon: string; name: string}]}
                   />
                 ))}
               </SimpleGrid>

@@ -1,7 +1,7 @@
 import React, {ReactElement} from "react";
 import {Box, LinkBox, LinkOverlay, Flex, Tooltip} from "@chakra-ui/react";
 import {ExternalLinkIcon} from "@chakra-ui/icons";
-import Image from "next/image";
+import Image from "next/future/image";
 
 const shimmer = (w, h) => `
 <svg width="${w}" height="${h}" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -35,7 +35,7 @@ const Portfolio = ({
   title: string;
   url: string;
   description: string;
-  techs: [{name: string; icon: string}];
+  techs?: [{name: string; icon: string}];
 }): ReactElement => (
   <LinkBox as="article">
     <LinkOverlay href={url} isExternal>
@@ -59,7 +59,8 @@ const Portfolio = ({
           <h4>{title}</h4>
           <p>{description}</p>
           <Box className="icons">
-            {techs.length > 0 &&
+            {techs &&
+              techs.length > 0 &&
               techs.map((tech, index) => (
                 <Tooltip key={index} label={tech.name}>
                   <div className="icon-wrap">
