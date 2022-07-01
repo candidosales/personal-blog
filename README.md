@@ -10,7 +10,7 @@ Landing page for your personal portfolio made with [NextJS](https://nextjs.org/)
 
 ## Requirements
 
-- The minimum Node.js version 12.22.0, which is the first version of Node.js with native ES modules support.
+- The minimum Node.js version 12.2.0, which is the first version of Node.js with native ES modules support.
 
 ## 🎯 Features
 
