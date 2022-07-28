@@ -309,6 +309,14 @@ export const volunteer = [
 
 export const posts = [
   {
+    imageUrl: "/post-medicina.jpeg",
+    imageAlt: "O que a medicina pode aprender com a programação?",
+    title: "O que a medicina pode aprender com a programação?",
+    description:
+      "Esse texto são apenas reflexões que foram geradas durante diálogos entre um engenheiro de software e uma médica.",
+    url: "https://medium.com/@candidosales/o-que-a-medicina-pode-aprender-com-a-programa%C3%A7%C3%A3o-4ca71bd94fc4",
+  },
+  {
     imageUrl: "/post-1.png",
     imageAlt: "How I got a job offer in Canada",
     title: "How I got a job offer in Canada",
