@@ -313,7 +313,7 @@ export const posts = [
     imageAlt: "Deploying Strapi 4 to Railway",
     title: "Deploying Strapi 4 to Railway",
     description: "Step by step on how to deploying Strapi 4 to Railway",
-    url: "https://medium.com/@candidosales/o-que-a-medicina-pode-aprender-com-a-programa%C3%A7%C3%A3o-4ca71bd94fc4",
+    url: "https://dev.to/candidosales/deploying-strapi-4-to-railway-589b",
   },
   {
     imageUrl: "/post-medicina.jpeg",
