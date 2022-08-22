@@ -60,6 +60,32 @@ export const portfolio = [
     ],
   },
   {
+    imageUrl: "/figma-plugin-svelte-vite.png",
+    imageAlt: "Figma Plugin + Svelte + Vite + Typescript    ",
+    title: "Figma Plugin + Svelte + Vite + Typescript",
+    description:
+      "A boilerplate for creating Figma plugins with Svelte, Vite and Typescript",
+    url: "https://github.com/candidosales/figma-plugin-svelte-vite",
+    techs: [
+      {
+        icon: "figma",
+        name: "Figma",
+      },
+      {
+        icon: "svelte",
+        name: "Svelte",
+      },
+      {
+        icon: "vite",
+        name: "Vite",
+      },
+      {
+        icon: "typescript",
+        name: "Typescript",
+      },
+    ],
+  },
+  {
     imageUrl: "/format-code.png",
     imageAlt: "Format Code",
     title: "Format Code",
