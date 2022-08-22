@@ -309,6 +309,14 @@ export const volunteer = [
 
 export const posts = [
   {
+    imageUrl: "/post-strapi-digital-ocean.webp",
+    imageAlt: "Deploying Strapi 4 to Digital Ocean App",
+    title: "Deploying Strapi 4 to Digital Ocean App",
+    description:
+      "Step by step on how to deploying Strapi 4 to Digital Ocean App",
+    url: "https://dev.to/candidosales/deploying-strapi-4-to-digital-ocean-app-1d8d",
+  },
+  {
     imageUrl: "/post-strapi-railway.webp",
     imageAlt: "Deploying Strapi 4 to Railway",
     title: "Deploying Strapi 4 to Railway",
