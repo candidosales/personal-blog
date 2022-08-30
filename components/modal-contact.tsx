@@ -70,6 +70,17 @@ const ModalContact = ({isOpen, onClose, locale}): ReactElement => {
               </h2>
               <AccordionPanel pb={4}>
                 {t.contact.mentoring.description}
+                <br />
+                <br />
+                {t.contact.mentoring.schedule}{" "}
+                <Link
+                  href="https://adplist.org/mentors/candido-sales-gomes"
+                  isExternal
+                  title="by E-mail ..."
+                >
+                  link
+                </Link>
+                .
               </AccordionPanel>
             </AccordionItem>
           </Accordion>
@@ -99,6 +110,15 @@ const ModalContact = ({isOpen, onClose, locale}): ReactElement => {
                 variant="solid"
               >
                 WhatsApp
+              </Button>
+            </Link>
+            <Link
+              href="https://adplist.org/mentors/candido-sales-gomes"
+              isExternal
+              title="Mentorship"
+            >
+              <Button colorScheme="twitter" variant="solid">
+                {t.contact.mentoring.titleLink}
               </Button>
             </Link>
           </Stack>

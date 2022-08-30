@@ -60,14 +60,6 @@ class MyDocument extends Document {
           <link rel="manifest" href="/manifest.json" />
           <link rel="preconnect" href="https://fonts.googleapis.com"></link>
           <link rel="preconnect" href="https://fonts.gstatic.com"></link>
-          {/* <link
-            href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
-            rel="stylesheet"
-          ></link> */}
-          <link
-            href="https://fonts.googleapis.com/css2?family=Questrial&display=swap"
-            rel="stylesheet"
-          ></link>
           {/* Global Site Tag (gtag.js) - Google Analytics */}
           <script
             async

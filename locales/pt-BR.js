@@ -48,8 +48,10 @@ export default {
     },
     mentoring: {
       title: "👨🏻‍🏫 Mentoria",
+      titleLink: "Mentoria",
       description:
         "Gostaria de ouvir sua história e apresentar as possibilidades que a computação e o mercado de tecnologia podem oferecer à sua carreira 😃 .",
+      schedule: "Fique a vontade para agendar uma sessão comigo neste",
     },
     feelFreeToSpeak: "👋 Sinta-se à vontade para falar comigo por",
   },

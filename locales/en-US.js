@@ -48,8 +48,10 @@ export default {
     },
     mentoring: {
       title: "👨🏻‍🏫 Mentoring",
+      titleLink: "Mentoring",
       description:
         "I would like to hear your story and present the possibilities that computing and the technology market can offer your career 😃.",
+      schedule: "Feel free to schedule a session with me on this",
     },
     feelFreeToSpeak: "👋 Feel free to speak with me by",
   },
