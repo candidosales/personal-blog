@@ -16,6 +16,7 @@ Landing page for your personal portfolio made with [NextJS](https://nextjs.org/)
 
 - [NextJS 12](https://nextjs.org/blog/next-12);
 - [React 18](https://nextjs.org/blog/next-12#preparing-for-react-18);
+- [Fontsource](https://fontsource.org/);
 - Dark mode;
 - Integrate with Google Analytics;
 - i18n (Internationalization);
