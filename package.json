@@ -1,6 +1,6 @@
 {
   "name": "personal-blog",
-  "version": "1.5.0",
+  "version": "1.5.1",
   "private": false,
   "author": "Candido Sales Gomes <candidosg@gmail.com>",
   "license": "MIT",
@@ -41,7 +41,7 @@
     "@emotion/styled": "^11.9.3",
     "@fontsource/questrial": "^4.5.9",
     "framer-motion": "^6.5.1",
-    "next": "^12.2.3",
+    "next": "^12.3.0",
     "next-pwa": "^5.5.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

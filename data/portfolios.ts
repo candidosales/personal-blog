@@ -1,6 +1,6 @@
 export const portfolio = [
   {
-    imageUrl: "/dependency-report-optimized.gif",
+    imageUrl: "/portfolio/dependency-report-optimized.gif",
     imageAlt: "Dependencies report",
     title: "Dependencies report",
     description:
@@ -26,7 +26,7 @@ export const portfolio = [
     ],
   },
   {
-    imageUrl: "/cloud-function-go.png",
+    imageUrl: "/portfolio/cloud-function-go.png",
     imageAlt: "API in GO to create Cloud Function",
     title: "API in GO to create Cloud Function",
     description: "🐹 An API for deploying Google Cloud Functions in Go.",
@@ -43,7 +43,7 @@ export const portfolio = [
     ],
   },
   {
-    imageUrl: "/material-time-picker.gif",
+    imageUrl: "/portfolio/material-time-picker.gif",
     imageAlt: "Material Time Picker",
     title: "Material Time Picker",
     description: "A simple time picker component using Angular Material.",
@@ -60,7 +60,7 @@ export const portfolio = [
     ],
   },
   {
-    imageUrl: "/figma-plugin-svelte-vite.png",
+    imageUrl: "/portfolio/figma-plugin-svelte-vite.png",
     imageAlt: "Figma Plugin + Svelte + Vite + Typescript    ",
     title: "Figma Plugin + Svelte + Vite + Typescript",
     description:
@@ -86,7 +86,7 @@ export const portfolio = [
     ],
   },
   {
-    imageUrl: "/format-code.png",
+    imageUrl: "/portfolio/format-code.png",
     imageAlt: "Format Code",
     title: "Format Code",
     description:
@@ -112,7 +112,7 @@ export const portfolio = [
     ],
   },
   {
-    imageUrl: "/landing-page-book.png",
+    imageUrl: "/portfolio/landing-page-book.png",
     imageAlt: "Landing Page Book",
     title: "Landing Page Book",
     description:
@@ -138,7 +138,7 @@ export const portfolio = [
     ],
   },
   {
-    imageUrl: "/personal-blog.png",
+    imageUrl: "/portfolio/personal-blog.png",
     imageAlt: "Personal Portfolio",
     title: "Personal Portfolio",
     description: "Landing page for your personal portfolio",
@@ -171,7 +171,7 @@ export const portfolio = [
     ],
   },
   {
-    imageUrl: "/empresas-angular.png",
+    imageUrl: "/portfolio/empresas-angular.png",
     imageAlt: "Empresas que usam Angular no Brasil",
     title: "Empresas que usam Angular no Brasil",
     description:
@@ -289,7 +289,7 @@ export const extras = [
 
 export const volunteer = [
   {
-    imageUrl: "/geleia-total.gif",
+    imageUrl: "/volunteer/geleia-total.gif",
     imageAlt: "Geleia Total",
     title: "Geleia Total",
     description: "Promote the culture and art of the state of Piauí - 🇧🇷",
@@ -314,7 +314,7 @@ export const volunteer = [
     ],
   },
   {
-    imageUrl: "/mapa-aborto-legal.gif",
+    imageUrl: "/volunteer/mapa-aborto-legal.gif",
     imageAlt: "Mapa Aborto Legal",
     title: "Mapa Aborto Legal",
     description:
@@ -335,7 +335,7 @@ export const volunteer = [
 
 export const posts = [
   {
-    imageUrl: "/post-strapi-digital-ocean.webp",
+    imageUrl: "/articles/post-strapi-digital-ocean.webp",
     imageAlt: "Deploying Strapi 4 to Digital Ocean App",
     title: "Deploying Strapi 4 to Digital Ocean App",
     description:
@@ -343,14 +343,14 @@ export const posts = [
     url: "https://dev.to/candidosales/deploying-strapi-4-to-digital-ocean-app-1d8d",
   },
   {
-    imageUrl: "/post-strapi-railway.webp",
+    imageUrl: "/articles/post-strapi-railway.webp",
     imageAlt: "Deploying Strapi 4 to Railway",
     title: "Deploying Strapi 4 to Railway",
     description: "Step by step on how to deploying Strapi 4 to Railway",
     url: "https://dev.to/candidosales/deploying-strapi-4-to-railway-589b",
   },
   {
-    imageUrl: "/post-medicina.jpeg",
+    imageUrl: "/articles/post-medicina.jpeg",
     imageAlt: "O que a medicina pode aprender com a programação?",
     title: "O que a medicina pode aprender com a programação?",
     description:
@@ -358,7 +358,7 @@ export const posts = [
     url: "https://medium.com/@candidosales/o-que-a-medicina-pode-aprender-com-a-programa%C3%A7%C3%A3o-4ca71bd94fc4",
   },
   {
-    imageUrl: "/post-1.png",
+    imageUrl: "/articles/post-1.png",
     imageAlt: "How I got a job offer in Canada",
     title: "How I got a job offer in Canada",
     description:
@@ -366,7 +366,7 @@ export const posts = [
     url: "https://blog.usejournal.com/how-did-i-get-a-job-offer-in-canada-3351937653ad",
   },
   {
-    imageUrl: "/post-2.png",
+    imageUrl: "/articles/post-2.png",
     imageAlt: "Como consegui uma oferta de emprego no Canadá",
     title: "Como consegui uma oferta de emprego no Canadá",
     description:
@@ -374,7 +374,7 @@ export const posts = [
     url: "https://medium.com/@candidosales/como-consegui-uma-oferta-de-emprego-no-canad%C3%A1-d8d8e717a379",
   },
   {
-    imageUrl: "/post-3.png",
+    imageUrl: "/articles/post-3.png",
     imageAlt: "Como fiz o intercâmbio para o Canadá",
     title: "Como fiz o intercâmbio para o Canadá",
     description:
