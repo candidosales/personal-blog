@@ -65,6 +65,7 @@ const Portfolio = ({
                 <Tooltip key={index} label={tech.name}>
                   <div className="icon-wrap">
                     <Image
+                      alt={tech.name}
                       key={index}
                       src={`/devicon/${tech.icon}.svg`}
                       width="30"
