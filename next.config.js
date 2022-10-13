@@ -1,9 +1,12 @@
 const path = require("path");
-const withPWA = require("next-pwa");
 const isProd = process.env.NODE_ENV === "production";
 
+const withPWA = require("next-pwa")({
+  dest: "public",
+  disable: !isProd,
+});
+
 module.exports = withPWA({
-  swcMinify: true,
   experimental: {
     images: {
       allowFutureImage: true,
@@ -16,10 +19,6 @@ module.exports = withPWA({
   },
   sassOptions: {
     includePaths: [path.join(__dirname, "styles")],
-  },
-  pwa: {
-    dest: "public",
-    disable: !isProd,
   },
   images: {
     domains: ["pbs.twimg.com", "bit.ly"],
