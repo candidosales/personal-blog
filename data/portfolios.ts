@@ -90,9 +90,13 @@ export const portfolio = [
     imageAlt: "Format Code",
     title: "Format Code",
     description:
-      "Format Code makes it easy to format code snippets and add a theme for syntax highlight",
+      "A Figma plugin designed to allow you to format and syntax highlight code",
     url: "https://github.com/candidosales/figma-format-code",
     techs: [
+      {
+        icon: "figma",
+        name: "Figma",
+      },
       {
         icon: "typescript",
         name: "Typescript",
@@ -104,10 +108,6 @@ export const portfolio = [
       {
         icon: "webpack",
         name: "Webpack",
-      },
-      {
-        icon: "figma",
-        name: "Figma",
       },
     ],
   },
