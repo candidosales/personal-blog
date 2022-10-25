@@ -14,14 +14,16 @@ Landing page for your personal portfolio made with [NextJS](https://nextjs.org/)
 
 ## 🎯 Features
 
-- [NextJS 12](https://nextjs.org/blog/next-12);
+- [NextJS 13](https://nextjs.org/blog/next-13);
 - [React 18](https://nextjs.org/blog/next-12#preparing-for-react-18);
 - [Fontsource](https://fontsource.org/);
+- @next/font/google
 - Dark mode;
 - Integrate with Google Analytics;
 - i18n (Internationalization);
 - [Lazy loading images](https://web.dev/browser-level-image-lazy-loading/);
-- [next/future/image](https://nextjs.org/docs/basic-features/image-optimization)
+- [next/font/google](https://nextjs.org/blog/next-13#nextfont)
+- [next/image](https://nextjs.org/docs/basic-features/image-optimization)
 - [PWA](https://web.dev/progressive-web-apps/);
 - Optmize images before to send it. [ImageOptim](https://github.com/JamieMason/ImageOptim-CLI);
 - [Chakra UI](https://chakra-ui.com/);
