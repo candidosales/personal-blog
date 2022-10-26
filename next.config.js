@@ -7,11 +7,6 @@ const withPWA = require("next-pwa")({
 });
 
 module.exports = withPWA({
-  experimental: {
-    images: {
-      allowFutureImage: true,
-    },
-  },
   i18n: {
     locales: ["en-US", "pt-BR", "en"],
     defaultLocale: "en-US",
