@@ -91,7 +91,7 @@ export const portfolio = [
     title: "Format Code",
     description:
       "A Figma plugin designed to allow you to format and syntax highlight code",
-    url: "https://github.com/candidosales/figma-format-code",
+    url: "https://www.figma.com/community/plugin/891351519501239645/Format-Code",
     techs: [
       {
         icon: "figma",
@@ -112,9 +112,43 @@ export const portfolio = [
     ],
   },
   {
-    imageUrl: "/portfolio/landing-page-book.png",
-    imageAlt: "Landing Page Book",
-    title: "Landing Page Book",
+    imageUrl: "/portfolio/landing-page-book-2v.jpg",
+    imageAlt: "Landing Page Book 2v",
+    title: "Landing Page Book 2v",
+    description:
+      "Simple landing page to sell your book - Astro + Svelte + Tailwind",
+    url: "https://github.com/candidosales/landing-page-book-astro-svelte-tailwind",
+    techs: [
+      {
+        icon: "typescript",
+        name: "Typescript",
+      },
+      {
+        icon: "tailwind",
+        name: "Tailwind",
+      },
+      {
+        icon: "svelte",
+        name: "Svelte",
+      },
+      {
+        icon: "partytown-1v",
+        name: "Partytown",
+      },
+      {
+        icon: "astro",
+        name: "Astro",
+      },
+      {
+        icon: "vercel",
+        name: "Vercel",
+      },
+    ],
+  },
+  {
+    imageUrl: "/portfolio/landing-page-book-1v.png",
+    imageAlt: "Landing Page Book 1v",
+    title: "Landing Page Book 1v",
     description:
       "Landing page for advertising and sales of books to independent authors",
     url: "https://github.com/candidosales/landing-page-book",
