@@ -132,7 +132,7 @@ export const portfolio = [
         name: "Svelte",
       },
       {
-        icon: "partytown-1v",
+        icon: "partytown",
         name: "Partytown",
       },
       {

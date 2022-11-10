@@ -19,6 +19,7 @@ import {
 } from "@chakra-ui/react";
 import {RiMailFill, RiWhatsappFill} from "react-icons/ri";
 import {chooseTranslate} from "../utils/translate";
+import ADPListIcon from "./ADPListIcon";
 const ModalContact = ({isOpen, onClose, locale}): ReactElement => {
   const t = chooseTranslate(locale);
   return (
@@ -117,7 +118,11 @@ const ModalContact = ({isOpen, onClose, locale}): ReactElement => {
               isExternal
               title="Mentorship"
             >
-              <Button colorScheme="twitter" variant="solid">
+              <Button
+                leftIcon={<ADPListIcon />}
+                colorScheme="twitter"
+                variant="solid"
+              >
                 {t.contact.mentoring.titleLink}
               </Button>
             </Link>
