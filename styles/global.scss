@@ -374,7 +374,7 @@ footer a {
   .presentation {
     color: var(--chakra-colors-gray-600);
     margin-bottom: 1rem;
-    font-size: 1.2rem;
+    font-size: var(--chakra-fontSizes-xl);
   }
 
   &:hover {
@@ -386,21 +386,25 @@ footer a {
 
 .about-description {
   width: 75%;
-
+  font-size: var(--chakra-fontSizes-xl);
   @media screen and (min-width: 22.5em) {
     width: 100%;
+    font-size: var(--chakra-fontSizes-lg);
   }
 
   @media screen and (min-width: 30em) {
     width: 100%;
+    font-size: var(--chakra-fontSizes-lg);
   }
 
   @media screen and (min-width: 48em) {
     width: 80%;
+    font-size: var(--chakra-fontSizes-xl);
   }
 
   @media screen and (min-width: 62em) {
     width: 75%;
+    font-size: var(--chakra-fontSizes-xl);
   }
 }
 
@@ -413,24 +417,24 @@ footer a {
 
   h3 {
     color: var(--chakra-colors-gray-500);
-    font-size: 1.5rem;
+    font-size: var(--chakra-fontSizes-2xl);
     line-height: 2.5rem;
     font-weight: bold;
     margin-right: 1rem;
     margin-bottom: 0.2rem;
 
     @media screen and (min-width: 22.5em) {
-      font-size: 1.5rem;
+      font-size: var(--chakra-fontSizes-2xl);
       margin-bottom: 0.2rem;
     }
 
     @media screen and (min-width: 30em) {
-      font-size: 1.5rem;
+      font-size: var(--chakra-fontSizes-2xl);
       margin-bottom: 0.2rem;
     }
 
     @media screen and (min-width: 48em) {
-      font-size: 2.5rem;
+      font-size: var(--chakra-fontSizes-4xl);
       margin-bottom: 1rem;
     }
   }
@@ -510,12 +514,13 @@ footer a {
       overflow: hidden;
       text-overflow: ellipsis;
       margin-top: var(--chakra-space-1);
+      font-size: var(--chakra-fontSizes-lg);
     }
 
     p {
       margin-top: var(--chakra-space-1);
       margin-bottom: var(--chakra-space-4);
-      font-size: 0.8rem;
+      font-size: var(--chakra-fontSizes-md);
       font-weight: normal;
     }
 
@@ -678,6 +683,7 @@ footer a {
 
   .grid-header p {
     color: var(--chakra-colors-gray-100);
+    font-size: var(--chakra-fontSizes-md);
   }
 
   .portfolios article {
