@@ -1,4 +1,6 @@
 import {ImageResponse} from "@vercel/og";
+/* eslint-disable react/react-in-jsx-scope */
+/* eslint-disable @next/next/no-img-element */
 
 export const config = {
   runtime: "experimental-edge",
@@ -14,7 +16,6 @@ export default async function () {
 
   return new ImageResponse(
     (
-      // eslint-disable-next-line react/react-in-jsx-scope
       <div
         style={{
           fontSize: 60,
