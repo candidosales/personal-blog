@@ -1,5 +1,5 @@
 import * as gtag from "../utils/gtag";
-import React from "react";
+import React, {ReactElement} from "react";
 import {AppProps} from "next/app";
 import {ChakraProvider, extendTheme} from "@chakra-ui/react";
 import {useEffect} from "react";
@@ -15,7 +15,7 @@ const theme = extendTheme({
   },
 });
 
-const App = ({Component, pageProps}: AppProps): any => {
+const App = ({Component, pageProps}: AppProps): ReactElement => {
   const router = useRouter();
 
   useEffect(() => {

@@ -1,7 +1,7 @@
 define(["exports"], function (t) {
   "use strict";
   try {
-    self["workbox:core:6.4.1"] && _();
+    self["workbox:core:6.5.3"] && _();
   } catch (t) {}
   const e = (t, ...e) => {
     let s = t;
@@ -13,7 +13,7 @@ define(["exports"], function (t) {
     }
   }
   try {
-    self["workbox:routing:6.4.1"] && _();
+    self["workbox:routing:6.5.3"] && _();
   } catch (t) {}
   const n = (t) => (t && "object" == typeof t ? t : {handle: t});
   class r {
@@ -168,7 +168,7 @@ define(["exports"], function (t) {
     return c().registerRoute(a), a;
   }
   try {
-    self["workbox:strategies:6.4.1"] && _();
+    self["workbox:strategies:6.5.3"] && _();
   } catch (t) {}
   const u = {
       cacheWillUpdate: async ({response: t}) =>
@@ -201,7 +201,7 @@ define(["exports"], function (t) {
   function m(t) {
     return "string" == typeof t ? new Request(t) : t;
   }
-  class R {
+  class v {
     constructor(t, e) {
       (this.h = {}),
         Object.assign(this, e),
@@ -296,7 +296,7 @@ define(["exports"], function (t) {
             )),
         });
       var a;
-      const o = await this.R(e);
+      const o = await this.v(e);
       if (!o) return !1;
       const {cacheName: c, matchOptions: h} = this.u,
         u = await self.caches.open(c),
@@ -377,7 +377,7 @@ define(["exports"], function (t) {
     destroy() {
       this.l.resolve(null);
     }
-    async R(t) {
+    async v(t) {
       let e = t,
         s = !1;
       for (const t of this.iterateCallbacks("cacheWillUpdate"))
@@ -395,7 +395,7 @@ define(["exports"], function (t) {
       return s || (e && 200 !== e.status && (e = void 0)), e;
     }
   }
-  class v {
+  class R {
     constructor(t = {}) {
       (this.cacheName = d(t.cacheName)),
         (this.plugins = t.plugins || []),
@@ -411,11 +411,11 @@ define(["exports"], function (t) {
       const e = t.event,
         s = "string" == typeof t.request ? new Request(t.request) : t.request,
         n = "params" in t ? t.params : void 0,
-        r = new R(this, {event: e, request: s, params: n}),
-        i = this.v(r, s, e);
+        r = new v(this, {event: e, request: s, params: n}),
+        i = this.R(r, s, e);
       return [i, this.q(i, r, s, e)];
     }
-    async v(t, e, n) {
+    async R(t, e, n) {
       let r;
       await t.runCallbacks("handlerWillStart", {event: n, request: e});
       try {
@@ -464,16 +464,16 @@ define(["exports"], function (t) {
   }
   function q() {
     return (
-      (q =
-        Object.assign ||
-        function (t) {
-          for (var e = 1; e < arguments.length; e++) {
-            var s = arguments[e];
-            for (var n in s)
-              Object.prototype.hasOwnProperty.call(s, n) && (t[n] = s[n]);
-          }
-          return t;
-        }),
+      (q = Object.assign
+        ? Object.assign.bind()
+        : function (t) {
+            for (var e = 1; e < arguments.length; e++) {
+              var s = arguments[e];
+              for (var n in s)
+                Object.prototype.hasOwnProperty.call(s, n) && (t[n] = s[n]);
+            }
+            return t;
+          }),
       q.apply(this, arguments)
     );
   }
@@ -623,7 +623,7 @@ define(["exports"], function (t) {
       has: (e, s) => !!j(e, s) || t.has(e, s),
     }))(N);
   try {
-    self["workbox:expiration:6.4.1"] && _();
+    self["workbox:expiration:6.5.3"] && _();
   } catch (t) {}
   const S = "cache-entries",
     K = (t) => {
@@ -749,7 +749,7 @@ define(["exports"], function (t) {
     }
   }
   try {
-    self["workbox:range-requests:6.4.1"] && _();
+    self["workbox:range-requests:6.5.3"] && _();
   } catch (t) {}
   async function H(t, e) {
     try {
@@ -812,7 +812,7 @@ define(["exports"], function (t) {
     return t.waitUntil(s), s;
   }
   try {
-    self["workbox:precaching:6.4.1"] && _();
+    self["workbox:precaching:6.5.3"] && _();
   } catch (t) {}
   function z(t) {
     if (!t) throw new s("add-to-cache-list-unexpected-type", {entry: t});
@@ -899,7 +899,7 @@ define(["exports"], function (t) {
         : await r.blob();
     return new Response(o, a);
   }
-  class Y extends v {
+  class Y extends R {
     constructor(t = {}) {
       (t.cacheName = w(t.cacheName)),
         super(t),
@@ -927,8 +927,13 @@ define(["exports"], function (t) {
         const s = r.integrity,
           i = t.integrity,
           a = !i || i === s;
-        (n = await e.fetch(new Request(t, {integrity: i || s}))),
-          s && a && (this.K(), await e.cachePut(t, n.clone()));
+        (n = await e.fetch(
+          new Request(t, {integrity: "no-cors" !== t.mode ? i || s : void 0})
+        )),
+          s &&
+            a &&
+            "no-cors" !== t.mode &&
+            (this.K(), await e.cachePut(t, n.clone()));
       }
       return n;
     }
@@ -1117,7 +1122,7 @@ define(["exports"], function (t) {
       }, t.strategy);
     }
   }
-  (t.CacheFirst = class extends v {
+  (t.CacheFirst = class extends R {
     async D(t, e) {
       let n,
         r = await e.cacheMatch(t);
@@ -1185,7 +1190,7 @@ define(["exports"], function (t) {
         this.X = new Map();
       }
     }),
-    (t.NetworkFirst = class extends v {
+    (t.NetworkFirst = class extends R {
       constructor(t = {}) {
         super(t),
           this.plugins.some((t) => "cacheWillUpdate" in t) ||
@@ -1243,7 +1248,7 @@ define(["exports"], function (t) {
         }) => (e && t.headers.has("range") ? await H(t, e) : e);
       }
     }),
-    (t.StaleWhileRevalidate = class extends v {
+    (t.StaleWhileRevalidate = class extends R {
       constructor(t = {}) {
         super(t),
           this.plugins.some((t) => "cacheWillUpdate" in t) ||
@@ -1251,6 +1256,7 @@ define(["exports"], function (t) {
       }
       async D(t, e) {
         const n = e.fetchAndCachePut(t).catch(() => {});
+        e.waitUntil(n);
         let r,
           i = await e.cacheMatch(t);
         if (i);

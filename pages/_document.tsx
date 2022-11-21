@@ -1,4 +1,4 @@
-import React from "react";
+import React, {ReactElement} from "react";
 import Document, {
   Html,
   Head,
@@ -18,7 +18,7 @@ class MyDocument extends Document {
     return {...initialProps};
   }
 
-  render(): any {
+  render(): ReactElement {
     return (
       <Html lang="en">
         <Head>
@@ -43,7 +43,7 @@ class MyDocument extends Document {
           <meta property="og:url" content="https://www.candidosales.me/" />
           <meta
             property="og:image"
-            content="https://www.candidosales.me/card-social-media-1200.png"
+            content="https://www.candidosales.me/api/og"
           />
           <meta property="og:image:width" content="1200" />
           <meta property="og:image:height" content="730" />
@@ -52,7 +52,7 @@ class MyDocument extends Document {
           <meta name="twitter:card" content="summary_large_image" />
           <meta
             name="twitter:image"
-            content="https://www.candidosales.me/card-social-media-1200.png"
+            content="https://www.candidosales.me/api/og"
           />
           <meta name="theme-color" content="#ffffff" />
           <link rel="shortcut icon" href="/pwa/icon-512.png" />
