@@ -43,8 +43,12 @@ class MyDocument extends Document {
           <meta property="og:url" content="https://www.candidosales.me/" />
           <meta
             property="og:image"
-            content="https://www.candidosales.me/card-social-media-1200.png"
+            content="https://www.candidosales.me/api/og"
           />
+          {/* <meta
+            property="og:image"
+            content="https://www.candidosales.me/card-social-media-1200.png"
+          /> */}
           <meta property="og:image:width" content="1200" />
           <meta property="og:image:height" content="730" />
           <meta name="twitter:creator" content="@candidosales" />
