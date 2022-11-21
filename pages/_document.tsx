@@ -45,10 +45,6 @@ class MyDocument extends Document {
             property="og:image"
             content="https://www.candidosales.me/api/og"
           />
-          {/* <meta
-            property="og:image"
-            content="https://www.candidosales.me/card-social-media-1200.png"
-          /> */}
           <meta property="og:image:width" content="1200" />
           <meta property="og:image:height" content="730" />
           <meta name="twitter:creator" content="@candidosales" />
@@ -56,7 +52,7 @@ class MyDocument extends Document {
           <meta name="twitter:card" content="summary_large_image" />
           <meta
             name="twitter:image"
-            content="https://www.candidosales.me/card-social-media-1200.png"
+            content="https://www.candidosales.me/api/og"
           />
           <meta name="theme-color" content="#ffffff" />
           <link rel="shortcut icon" href="/pwa/icon-512.png" />
