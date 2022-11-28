@@ -5,7 +5,7 @@ import Topbar from "../components/topbar";
 import {ArrowForwardIcon, ExternalLinkIcon} from "@chakra-ui/icons";
 import {Box, Flex, Link, SimpleGrid, useDisclosure} from "@chakra-ui/react";
 import {chooseTranslate} from "../utils/translate";
-import {extras, portfolio, posts, volunteer} from "../data/portfolios";
+import {extras, portfolio, posts, volunteer, hobbies} from "../data/portfolios";
 import {useRouter} from "next/router";
 
 const Home = (): ReactElement => {
@@ -134,6 +134,28 @@ const Home = (): ReactElement => {
                 gap={6}
               >
                 {posts.map((p, index) => (
+                  <Portfolio
+                    key={index}
+                    imageUrl={p.imageUrl}
+                    imageAlt={p.imageAlt}
+                    title={p.title}
+                    description={p.description}
+                    url={p.url}
+                  />
+                ))}
+              </SimpleGrid>
+            </section>
+            <section className="grid">
+              <div className="grid-header">
+                <h3>🎨 {t.hobbies.title}</h3>
+                <p>{t.hobbies.description}</p>
+              </div>
+              <SimpleGrid
+                className="portfolios blog"
+                columns={{sm: 1, md: 2, lg: 3}}
+                gap={6}
+              >
+                {hobbies.map((p, index) => (
                   <Portfolio
                     key={index}
                     imageUrl={p.imageUrl}
