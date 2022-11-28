@@ -8,7 +8,7 @@ import {
   Select,
 } from "@chakra-ui/react";
 import {RiLinkedinBoxFill, RiGithubFill, RiMediumFill} from "react-icons/ri";
-import {FaDev} from "react-icons/fa";
+import {SiDevdotto} from "react-icons/si";
 import Image from "next/image";
 import ModalContact from "./modal-contact";
 import {chooseTranslate} from "../utils/translate";
@@ -75,7 +75,7 @@ const Topbar = ({changeLanguage, locale}): ReactElement => {
               variant="ghost"
               size="md"
               aria-label="DevTo"
-              icon={<FaDev />}
+              icon={<SiDevdotto />}
             />
           </Link>
         </Tooltip>
