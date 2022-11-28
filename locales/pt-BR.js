@@ -30,6 +30,11 @@ export default {
     title: "Blog",
     description: "Alguns artigos que escrevo sobre minhas experiências",
   },
+  hobbies: {
+    title: "Hobbies",
+    description:
+      "Vamos exercitar um pouco de como lidar com o medo de não ser perfeito através da arte 😊",
+  },
   footer: {
     letsWorkTogether: "Vamos trabalhar juntos",
     madeBy: "feito com",

@@ -416,3 +416,43 @@ export const posts = [
     url: "https://medium.com/@candidosales/como-consegui-uma-oferta-de-emprego-no-canad%C3%A1-d8d8e717a379",
   },
 ];
+
+export const hobbies = [
+  {
+    imageUrl: "/hobbies/salvation.webp",
+    imageAlt: "Salvation - Acrylic Painting",
+    title: "Salvation - Acrylic Painting",
+    description: "🎨 Acrylic paint on gesso canvas",
+    url: "https://www.youtube.com/watch?v=FCxNPkTVbZ0",
+  },
+  {
+    imageUrl: "/hobbies/desert-flower.webp",
+    imageAlt: "Desert Flower - Watercolour Painting",
+    title: "Desert Flower - Watercolour Painting",
+    description:
+      "🎨 Ink: Winsor & Newton Cotman Water Colour Sketchers Pocket Box",
+    url: "https://www.youtube.com/watch?v=ETyX0zZivBk",
+  },
+  {
+    imageUrl: "/hobbies/carnauba-radiante.webp",
+    imageAlt: "Carnaúba Radiante - Gouache Painting",
+    title: "Carnaúba Radiante - Gouache Painting",
+    description: "🎨 Ink: Artist's Gouache - M. Graham & Co.",
+    url: "https://www.youtube.com/watch?v=aJceXwaSUOU",
+  },
+  {
+    imageUrl: "/hobbies/sunflower.webp",
+    imageAlt: "Sunflower - Watercolour Painting",
+    title: "Sunflower - Watercolour Painting",
+    description:
+      "🎨 Ink: Winsor & Newton Cotman Water Colour Sketchers Pocket Box",
+    url: "https://www.youtube.com/watch?v=DC37jIi70tY",
+  },
+  {
+    imageUrl: "/hobbies/horizon.webp",
+    imageAlt: "Horizon - Acrylic Painting",
+    title: "Horizon - Acrylic Painting",
+    description: "🎨 Acrylic paint on gesso canvas",
+    url: "https://www.youtube.com/watch?v=j0M6_ZJxJAs",
+  },
+];

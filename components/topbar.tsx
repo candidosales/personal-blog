@@ -8,6 +8,7 @@ import {
   Select,
 } from "@chakra-ui/react";
 import {RiLinkedinBoxFill, RiGithubFill, RiMediumFill} from "react-icons/ri";
+import {FaDev} from "react-icons/fa";
 import Image from "next/image";
 import ModalContact from "./modal-contact";
 import {chooseTranslate} from "../utils/translate";
@@ -48,7 +49,7 @@ const Topbar = ({changeLanguage, locale}): ReactElement => {
         >
           {t.getInTouch}
         </Button>
-        <Tooltip hasArrow label="" placement="auto">
+        <Tooltip hasArrow label="Linkedin" placement="auto">
           <Link href="https://www.linkedin.com/in/candidosales/" isExternal>
             <IconButton
               variant="ghost"
@@ -58,7 +59,7 @@ const Topbar = ({changeLanguage, locale}): ReactElement => {
             />
           </Link>
         </Tooltip>
-        <Tooltip hasArrow label="" placement="auto">
+        <Tooltip hasArrow label="Medium" placement="auto">
           <Link href="https://medium.com/@candidosales" isExternal>
             <IconButton
               variant="ghost"
@@ -68,7 +69,17 @@ const Topbar = ({changeLanguage, locale}): ReactElement => {
             />
           </Link>
         </Tooltip>
-        <Tooltip hasArrow label="" placement="auto">
+        <Tooltip hasArrow label="Dev.to" placement="auto">
+          <Link href="https://dev.to/candidosales" isExternal>
+            <IconButton
+              variant="ghost"
+              size="md"
+              aria-label="DevTo"
+              icon={<FaDev />}
+            />
+          </Link>
+        </Tooltip>
+        <Tooltip hasArrow label="Github" placement="auto">
           <Link href="https://github.com/candidosales" isExternal>
             <IconButton
               variant="ghost"
