@@ -369,6 +369,14 @@ export const volunteer = [
 
 export const posts = [
   {
+    imageUrl: "/articles/post-organize-figma.webp",
+    imageAlt: "How to organize Figma files for developers",
+    title: "How to organize Figma files for developers",
+    description:
+      "I going to share a simple tip that I find recently that helps the productivity of our team",
+    url: "https://dev.to/candidosales/how-to-organize-figma-files-for-developers-2lcj",
+  },
+  {
     imageUrl: "/articles/post-strapi-digital-ocean.webp",
     imageAlt: "Deploying Strapi 4 to Digital Ocean App",
     title: "Deploying Strapi 4 to Digital Ocean App",
