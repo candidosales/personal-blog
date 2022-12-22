@@ -120,24 +120,24 @@ export const portfolio = [
     url: "https://github.com/candidosales/landing-page-book-astro-svelte-tailwind",
     techs: [
       {
-        icon: "typescript",
-        name: "Typescript",
-      },
-      {
-        icon: "tailwind",
-        name: "Tailwind",
+        icon: "astro",
+        name: "Astro",
       },
       {
         icon: "svelte",
         name: "Svelte",
       },
       {
+        icon: "tailwind",
+        name: "Tailwind",
+      },
+      {
         icon: "partytown",
         name: "Partytown",
       },
       {
-        icon: "astro",
-        name: "Astro",
+        icon: "typescript",
+        name: "Typescript",
       },
       {
         icon: "vercel",
