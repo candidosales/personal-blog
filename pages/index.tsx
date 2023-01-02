@@ -149,6 +149,14 @@ const Home = (): ReactElement => {
               <div className="grid-header">
                 <h3>🎨 {t.hobbies.title}</h3>
                 <p>{t.hobbies.description}</p>
+                <p>
+                  {t.hobbies.buyStore}{" "}
+                  <Link href="https://store.candidosales.me/" isExternal>
+                    {t.hobbies.store}
+                    <ExternalLinkIcon mx="2px" />
+                  </Link>
+                  .
+                </p>
               </div>
               <SimpleGrid
                 className="portfolios blog"

@@ -33,7 +33,10 @@ export default {
   hobbies: {
     title: "Hobbies",
     description:
-      "Let's exercise a little bit of how to deal with the fear of not being perfect through art 😊",
+      "Let's exercise a little bit of how to deal with the fear of not being perfect through art 😊.",
+    buyStore:
+      "If you liked any painting you can buy one of my products 👕 in my little",
+    store: "shop",
   },
   footer: {
     letsWorkTogether: "Let's work together",
