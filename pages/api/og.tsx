@@ -3,7 +3,7 @@ import {ImageResponse} from "@vercel/og";
 /* eslint-disable @next/next/no-img-element */
 
 export const config = {
-  runtime: "experimental-edge",
+  runtime: "edge",
 };
 
 // Make sure the font exists in the specified path:
