@@ -1,5 +1,39 @@
 export const portfolio = [
   {
+    imageUrl: "/portfolio/material-time-picker.gif",
+    imageAlt: "Material Time Picker",
+    title: "Material Time Picker",
+    description: "A simple time picker component using Angular Material.",
+    url: "https://github.com/candidosales/material-time-picker",
+    techs: [
+      {
+        icon: "angular",
+        name: "Angular",
+      },
+      {
+        icon: "npm",
+        name: "NPM",
+      },
+    ],
+  },
+  {
+    imageUrl: "/portfolio/svelte-google-translate.jpg",
+    imageAlt: "Svelte Google Translate",
+    title: "Svelte Google Translate",
+    description: "Google Translate component for Svelte.",
+    url: "https://github.com/candidosales/svelte-google-translate",
+    techs: [
+      {
+        icon: "svelte",
+        name: "Svelte",
+      },
+      {
+        icon: "google-translate",
+        name: "Google Translate",
+      },
+    ],
+  },
+  {
     imageUrl: "/portfolio/dependency-report-optimized.gif",
     imageAlt: "Dependencies report",
     title: "Dependencies report",
@@ -42,23 +76,7 @@ export const portfolio = [
       },
     ],
   },
-  {
-    imageUrl: "/portfolio/material-time-picker.gif",
-    imageAlt: "Material Time Picker",
-    title: "Material Time Picker",
-    description: "A simple time picker component using Angular Material.",
-    url: "https://github.com/candidosales/material-time-picker",
-    techs: [
-      {
-        icon: "angular",
-        name: "Angular",
-      },
-      {
-        icon: "npm",
-        name: "NPM",
-      },
-    ],
-  },
+
   {
     imageUrl: "/portfolio/figma-plugin-svelte-vite.png",
     imageAlt: "Figma Plugin + Svelte + Vite + Typescript    ",

@@ -6,6 +6,12 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+html[data-theme="light"] {
+  image.astro {
+    background: red;
+  } 
+}
+
 h1,
 h2,
 h3,
