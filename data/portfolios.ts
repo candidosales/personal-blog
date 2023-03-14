@@ -34,76 +34,6 @@ export const portfolio = [
     ],
   },
   {
-    imageUrl: "/portfolio/dependency-report-optimized.gif",
-    imageAlt: "Dependencies report",
-    title: "Dependencies report",
-    description:
-      "Dependencies report aims to help analyze the consistency of the dependencies in your company's frontend projects.",
-    url: "https://github.com/candidosales/dependency-report",
-    techs: [
-      {
-        icon: "angular",
-        name: "Angular",
-      },
-      {
-        icon: "go",
-        name: "Go",
-      },
-      {
-        icon: "firebase",
-        name: "Firebase",
-      },
-      {
-        icon: "docker",
-        name: "Docker",
-      },
-    ],
-  },
-  {
-    imageUrl: "/portfolio/cloud-function-go.png",
-    imageAlt: "API in GO to create Cloud Function",
-    title: "API in GO to create Cloud Function",
-    description: "🐹 An API for deploying Google Cloud Functions in Go.",
-    url: "https://github.com/candidosales/cloud-function-go",
-    techs: [
-      {
-        icon: "go",
-        name: "Go",
-      },
-      {
-        icon: "google-cloud",
-        name: "Google Cloud",
-      },
-    ],
-  },
-
-  {
-    imageUrl: "/portfolio/figma-plugin-svelte-vite.png",
-    imageAlt: "Figma Plugin + Svelte + Vite + Typescript    ",
-    title: "Figma Plugin + Svelte + Vite + Typescript",
-    description:
-      "A boilerplate for creating Figma plugins with Svelte, Vite and Typescript",
-    url: "https://github.com/candidosales/figma-plugin-svelte-vite",
-    techs: [
-      {
-        icon: "figma",
-        name: "Figma",
-      },
-      {
-        icon: "svelte",
-        name: "Svelte",
-      },
-      {
-        icon: "vite",
-        name: "Vite",
-      },
-      {
-        icon: "typescript",
-        name: "Typescript",
-      },
-    ],
-  },
-  {
     imageUrl: "/portfolio/format-code.png",
     imageAlt: "Format Code",
     title: "Format Code",
@@ -160,6 +90,75 @@ export const portfolio = [
       {
         icon: "vercel",
         name: "Vercel",
+      },
+    ],
+  },
+  {
+    imageUrl: "/portfolio/figma-plugin-svelte-vite.png",
+    imageAlt: "Figma Plugin + Svelte + Vite + Typescript    ",
+    title: "Figma Plugin + Svelte + Vite + Typescript",
+    description:
+      "A boilerplate for creating Figma plugins with Svelte, Vite and Typescript",
+    url: "https://github.com/candidosales/figma-plugin-svelte-vite",
+    techs: [
+      {
+        icon: "figma",
+        name: "Figma",
+      },
+      {
+        icon: "svelte",
+        name: "Svelte",
+      },
+      {
+        icon: "vite",
+        name: "Vite",
+      },
+      {
+        icon: "typescript",
+        name: "Typescript",
+      },
+    ],
+  },
+  {
+    imageUrl: "/portfolio/dependency-report-optimized.gif",
+    imageAlt: "Dependencies report",
+    title: "Dependencies report",
+    description:
+      "Dependencies report aims to help analyze the consistency of the dependencies in your company's frontend projects.",
+    url: "https://github.com/candidosales/dependency-report",
+    techs: [
+      {
+        icon: "angular",
+        name: "Angular",
+      },
+      {
+        icon: "go",
+        name: "Go",
+      },
+      {
+        icon: "firebase",
+        name: "Firebase",
+      },
+      {
+        icon: "docker",
+        name: "Docker",
+      },
+    ],
+  },
+  {
+    imageUrl: "/portfolio/cloud-function-go.png",
+    imageAlt: "API in GO to create Cloud Function",
+    title: "API in GO to create Cloud Function",
+    description: "🐹 An API for deploying Google Cloud Functions in Go.",
+    url: "https://github.com/candidosales/cloud-function-go",
+    techs: [
+      {
+        icon: "go",
+        name: "Go",
+      },
+      {
+        icon: "google-cloud",
+        name: "Google Cloud",
       },
     ],
   },
