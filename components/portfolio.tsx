@@ -2,6 +2,7 @@ import React, {ReactElement} from "react";
 import {Box, LinkBox, LinkOverlay, Flex, Tooltip} from "@chakra-ui/react";
 import {ExternalLinkIcon} from "@chakra-ui/icons";
 import Image from "next/image";
+import DevIcon from "./icons/DevIcon";
 
 const shimmer = (w, h) => `
 <svg width="${w}" height="${h}" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -64,16 +65,7 @@ const Portfolio = ({
               techs.map((tech, index) => (
                 <Tooltip key={index} label={tech.name}>
                   <div className="icon-wrap">
-                    <Image
-                      className={tech.icon}
-                      alt={tech.name}
-                      key={index}
-                      src={`/devicon/${tech.icon}.svg`}
-                      width="30"
-                      height="30"
-                      title={`${tech.icon} icon`}
-                      loading="lazy"
-                    />
+                    <DevIcon icon={tech.icon} />
                   </div>
                 </Tooltip>
               ))}
