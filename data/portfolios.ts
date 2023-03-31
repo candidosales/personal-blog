@@ -340,6 +340,32 @@ export const extras = [
 
 export const volunteer = [
   {
+    imageUrl: "/volunteer/geleia-turismo-2.gif",
+    imageAlt: "Geleia Turismo",
+    title: "Geleia Turismo",
+    description:
+      "[Beta] Preserve and discover our Cuisine, History, Ecotourism in Piauí - 🇧🇷",
+    url: "https://www.geleiaturismo.com/",
+    techs: [
+      {
+        icon: "svelte",
+        name: "Svelte",
+      },
+      {
+        icon: "meilisearch",
+        name: "Meilisearch",
+      },
+      {
+        icon: "strapi",
+        name: "Strapi",
+      },
+      {
+        icon: "render",
+        name: "Render",
+      },
+    ],
+  },
+  {
     imageUrl: "/volunteer/geleia-total.gif",
     imageAlt: "Geleia Total",
     title: "Geleia Total",
