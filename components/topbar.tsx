@@ -6,6 +6,7 @@ import {
   Tooltip,
   useDisclosure,
   Select,
+  Hide,
 } from "@chakra-ui/react";
 import {RiLinkedinBoxFill, RiGithubFill, RiMediumFill} from "react-icons/ri";
 import {SiDevdotto} from "react-icons/si";
@@ -42,7 +43,7 @@ const Topbar = ({changeLanguage, locale}): ReactElement => {
       <div className="header-actions">
         <Button
           className="header-actions__get-in-touch"
-          colorScheme="whatsapp"
+          colorScheme="teal"
           size="sm"
           mr="2"
           onClick={onOpen}
@@ -60,34 +61,40 @@ const Topbar = ({changeLanguage, locale}): ReactElement => {
           </Link>
         </Tooltip>
         <Tooltip hasArrow label="Medium" placement="auto">
-          <Link href="https://medium.com/@candidosales" isExternal>
-            <IconButton
-              variant="ghost"
-              size="md"
-              aria-label="Medium"
-              icon={<RiMediumFill />}
-            />
-          </Link>
+          <Hide below="md">
+            <Link href="https://medium.com/@candidosales" isExternal>
+              <IconButton
+                variant="ghost"
+                size="md"
+                aria-label="Medium"
+                icon={<RiMediumFill />}
+              />
+            </Link>
+          </Hide>
         </Tooltip>
         <Tooltip hasArrow label="Dev.to" placement="auto">
-          <Link href="https://dev.to/candidosales" isExternal>
-            <IconButton
-              variant="ghost"
-              size="md"
-              aria-label="DevTo"
-              icon={<SiDevdotto />}
-            />
-          </Link>
+          <Hide below="md">
+            <Link href="https://dev.to/candidosales" isExternal>
+              <IconButton
+                variant="ghost"
+                size="md"
+                aria-label="DevTo"
+                icon={<SiDevdotto />}
+              />
+            </Link>
+          </Hide>
         </Tooltip>
         <Tooltip hasArrow label="Github" placement="auto">
-          <Link href="https://github.com/candidosales" isExternal>
-            <IconButton
-              variant="ghost"
-              size="md"
-              aria-label="Github"
-              icon={<RiGithubFill />}
-            />
-          </Link>
+          <Hide below="md">
+            <Link href="https://github.com/candidosales" isExternal>
+              <IconButton
+                variant="ghost"
+                size="md"
+                aria-label="Github"
+                icon={<RiGithubFill />}
+              />
+            </Link>
+          </Hide>
         </Tooltip>
       </div>
       <ModalContact isOpen={isOpen} onClose={onClose} locale={locale} />

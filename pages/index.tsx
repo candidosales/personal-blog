@@ -7,6 +7,7 @@ import {Box, Flex, Link, SimpleGrid, useDisclosure} from "@chakra-ui/react";
 import {chooseTranslate} from "../utils/translate";
 import {extras, portfolio, posts, volunteer, hobbies} from "../data/portfolios";
 import {useRouter} from "next/router";
+import {RiMastodonFill, RiTwitterFill} from "react-icons/ri";
 
 const Home = (): ReactElement => {
   const {isOpen, onOpen, onClose} = useDisclosure();
@@ -182,7 +183,7 @@ const Home = (): ReactElement => {
               {t.footer.letsWorkTogether}
               <ArrowForwardIcon />
             </h1>
-            <Box justifyContent="space-between" display="flex">
+            <Box justifyContent="center" display="flex" flexDirection="column">
               <p>
                 {t.footer.madeBy}
                 <Link color="blue.500" href="https://nextjs.org/" isExternal>
@@ -199,6 +200,16 @@ const Home = (): ReactElement => {
                   href="https://twitter.com/candidosales"
                   isExternal
                 >
+                  <RiTwitterFill />
+                  @candidosales
+                </Link>
+                <Link
+                  color="blue.500"
+                  rel="me"
+                  href="https://mastodon.social/@candidosales"
+                  isExternal
+                >
+                  <RiMastodonFill />
                   @candidosales
                 </Link>
               </p>

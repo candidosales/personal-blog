@@ -1,7 +1,7 @@
 import React, {ReactElement} from "react";
 import {Box, LinkBox, LinkOverlay, Flex, Tooltip} from "@chakra-ui/react";
 import {ExternalLinkIcon} from "@chakra-ui/icons";
-import Image from "next/image";
+import {Image} from "@chakra-ui/react";
 
 const shimmer = (w, h) => `
 <svg width="${w}" height="${h}" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -46,11 +46,10 @@ const Portfolio = ({
               src={imageUrl}
               alt={imageAlt}
               placeholder="blur"
-              blurDataURL={`data:image/svg+xml;base64,${toBase64(
+              width={"100%"}
+              fallbackSrc={`data:image/svg+xml;base64,${toBase64(
                 shimmer(700, 475)
               )}`}
-              width={373}
-              height={200}
               loading="lazy"
             />
           )}

@@ -94,7 +94,7 @@ const ModalContact = ({isOpen, onClose, locale}): ReactElement => {
             >
               <Button
                 leftIcon={<RiMailFill />}
-                colorScheme="whatsapp"
+                colorScheme="teal"
                 variant="solid"
               >
                 E-mail
@@ -107,7 +107,7 @@ const ModalContact = ({isOpen, onClose, locale}): ReactElement => {
             >
               <Button
                 leftIcon={<RiWhatsappFill />}
-                colorScheme="whatsapp"
+                colorScheme="teal"
                 variant="solid"
               >
                 WhatsApp
@@ -120,7 +120,7 @@ const ModalContact = ({isOpen, onClose, locale}): ReactElement => {
             >
               <Button
                 leftIcon={<ADPListIcon />}
-                colorScheme="twitter"
+                colorScheme="blue"
                 variant="solid"
               >
                 {t.contact.mentoring.titleLink}
