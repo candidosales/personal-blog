@@ -64,12 +64,11 @@ const Portfolio = ({
                 <Tooltip key={index} label={tech.name}>
                   <div className="icon-wrap">
                     <Image
+                      boxSize="30px"
                       className={tech.icon}
                       alt={tech.name}
                       key={index}
                       src={`/devicon/${tech.icon}.svg`}
-                      width="30"
-                      height="30"
                       title={`${tech.icon} icon`}
                       loading="lazy"
                     />
