@@ -1,4 +1,4 @@
-import {ImageResponse} from "@vercel/og";
+import {ImageResponse} from "next/server";
 /* eslint-disable react/react-in-jsx-scope */
 /* eslint-disable @next/next/no-img-element */
 
