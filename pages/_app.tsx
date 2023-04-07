@@ -31,7 +31,7 @@ const App = ({Component, pageProps}: AppProps): ReactElement => {
   return (
     <ChakraProvider theme={theme}>
       <Head>
-        <title>Candido Sales Gomes</title>
+        <title>Candido Sales Gomes - Software Engineer</title>
         <meta
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, user-scalable=no, viewport-fit=cover"
