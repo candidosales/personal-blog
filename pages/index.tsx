@@ -34,10 +34,6 @@ const Home = (): ReactElement => {
         >
           <main>
             <section className="about">
-              <p className="presentation">
-                <span className="presentation-hand">👋</span>{" "}
-                {t.about.hiMyNameIs}
-              </p>
               <h1>{t.about.name}</h1>
               <h2>
                 {t.about.buildThings} <br />

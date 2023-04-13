@@ -91,37 +91,6 @@ a {
   }
 }
 
-.presentation-hand {
-  display: inline-block;
-  width: 19px;
-  height: 23px;
-  margin-right: 8px;
-
-
-}
-
-@keyframes hand-shake {
-  0% {
-    transform: rotate(-5deg);
-  }
-
-  25% {
-    transform: rotate(15deg);
-  }
-
-  50% {
-    transform: rotate(-10deg);
-  }
-
-  75% {
-    transform: rotate(15deg);
-  }
-
-  100% {
-    transform: rotate(-5deg);
-  }
-}
-
 main {
   flex: 1;
   display: flex;
@@ -384,12 +353,6 @@ footer a {
     color: var(--chakra-colors-gray-600);
     margin-bottom: 1rem;
     font-size: var(--chakra-fontSizes-xl);
-  }
-
-  &:hover {
-    .presentation-hand {
-      animation: hand-shake 2s infinite;
-    }
   }
 }
 
