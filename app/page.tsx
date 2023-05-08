@@ -1,3 +1,5 @@
+"use client";
+
 import ModalContact from "../components/modal-contact";
 import Portfolio from "../components/portfolio";
 import React, {ReactElement} from "react";
@@ -6,18 +8,25 @@ import {ArrowForwardIcon, ExternalLinkIcon} from "@chakra-ui/icons";
 import {Box, Flex, Link, SimpleGrid, useDisclosure} from "@chakra-ui/react";
 import {chooseTranslate} from "../utils/translate";
 import {extras, portfolio, posts, volunteer, hobbies} from "../data/portfolios";
-import {useRouter} from "next/router";
+import {useRouter, usePathname, useSearchParams} from "next/navigation";
 import {RiMastodonFill, RiTwitterFill} from "react-icons/ri";
 
 const Home = (): ReactElement => {
   const {isOpen, onOpen, onClose} = useDisclosure();
 
   const router = useRouter();
-  const {locale} = router;
-  const t = chooseTranslate(locale);
+  const pathname = usePathname();
+  const searchParams = useSearchParams();
+  const locale = searchParams?.toString();
+
+  console.log("pathname", pathname);
+  console.log("searchParams", searchParams);
+  console.log("locale", locale);
+
+  const t = chooseTranslate(searchParams?.get("locale"));
 
   const changeLanguage = (e) => {
-    router.push(router.pathname, router.asPath, {locale: e.target.value});
+    router.push(`${pathname}/${e.target.value}`);
   };
 
   return (
@@ -53,7 +62,7 @@ const Home = (): ReactElement => {
             </section>
             <section className="grid">
               <div className="grid-header">
-                <h3>🧳 {t.portfolio.title}</h3>
+                <h3>{t.portfolio.title}</h3>
                 <p>{t.portfolio.description}</p>
               </div>
               <SimpleGrid
@@ -76,7 +85,7 @@ const Home = (): ReactElement => {
             </section>
             <section className="grid">
               <div className="grid-header">
-                <h3>✨ {t.extras.title}</h3>
+                <h3>{t.extras.title}</h3>
                 <p>{t.extras.description}</p>
               </div>
               <SimpleGrid
@@ -99,7 +108,7 @@ const Home = (): ReactElement => {
             </section>
             <section className="grid">
               <div className="grid-header">
-                <h3>🤝 {t.volunteer.title}</h3>
+                <h3>{t.volunteer.title}</h3>
                 <p>{t.volunteer.description}</p>
               </div>
               <SimpleGrid
@@ -122,7 +131,7 @@ const Home = (): ReactElement => {
             </section>
             <section className="grid">
               <div className="grid-header">
-                <h3>📰 {t.blog.title}</h3>
+                <h3>{t.blog.title}</h3>
                 <p>{t.blog.description}</p>
               </div>
               <SimpleGrid
