@@ -53,7 +53,7 @@ const Home = (): ReactElement => {
             </section>
             <section className="grid">
               <div className="grid-header">
-                <h3>🧳 {t.portfolio.title}</h3>
+                <h3>{t.portfolio.title}</h3>
                 <p>{t.portfolio.description}</p>
               </div>
               <SimpleGrid
@@ -76,7 +76,7 @@ const Home = (): ReactElement => {
             </section>
             <section className="grid">
               <div className="grid-header">
-                <h3>✨ {t.extras.title}</h3>
+                <h3>{t.extras.title}</h3>
                 <p>{t.extras.description}</p>
               </div>
               <SimpleGrid
@@ -99,7 +99,7 @@ const Home = (): ReactElement => {
             </section>
             <section className="grid">
               <div className="grid-header">
-                <h3>🤝 {t.volunteer.title}</h3>
+                <h3>{t.volunteer.title}</h3>
                 <p>{t.volunteer.description}</p>
               </div>
               <SimpleGrid
@@ -122,7 +122,7 @@ const Home = (): ReactElement => {
             </section>
             <section className="grid">
               <div className="grid-header">
-                <h3>📰 {t.blog.title}</h3>
+                <h3>{t.blog.title}</h3>
                 <p>{t.blog.description}</p>
               </div>
               <SimpleGrid
@@ -144,7 +144,7 @@ const Home = (): ReactElement => {
             </section>
             <section className="grid">
               <div className="grid-header">
-                <h3>🎨 {t.hobbies.title}</h3>
+                <h3>{t.hobbies.title}</h3>
                 <p>{t.hobbies.description}</p>
                 <p>
                   {t.hobbies.buyStore}{" "}
