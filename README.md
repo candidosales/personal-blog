@@ -52,9 +52,8 @@ npm install -g imageoptim-cli
 If you want to say thank you and/or support the active development this project:
 
 1. Add a [GitHub Star](https://github.com/candidosales/personal-blog/stargazers) to the project.
-2. Tweet about the project [on your Twitter](https://twitter.com/intent/tweet?url=https%3A%2F%2Fgithub.com%2Fcandidosales%2Fpersonal-blog&text=Dependencies%20report%20aims%20to%20help%20analyze%20the%20consistency%20of%20the%20dependencies%20in%20your%20company%27s%20frontend%20projects).
-3. Write a review or tutorial on [Medium](https://medium.com/), [Dev.to](https://dev.to/) or personal blog.
-4. Support the project by donating a [cup of coffee](https://buymeacoff.ee/candidosales).
+2. Write a review or tutorial on [Medium](https://medium.com/), [Dev.to](https://dev.to/) or personal blog.
+3. Support the project by donating a [cup of coffee](https://buymeacoff.ee/candidosales).
 
 ## ☕ Supporters
 
